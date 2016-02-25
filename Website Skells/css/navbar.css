@@ -6,30 +6,34 @@ html, body {            /* overall style of each page */
   background-color: #cccccc; /* sets background color of each page to a light gray */
 }
 
-.page-header {
+.header {
                                   /* image obtained from takeadaytrip.com http://takeadaytrip.com/great-places/massachusetts/horn-pond-woburn-winchester-ma/
                                   /*Directs page to where the picture is located*/
     /* background-image: url('flaireLogo.png');*/
      margin: auto;                /*Ensures picture doesn't stretch outside div*/
      width: 100%;                 /* sizes the div to the width of the screen*/
-     height: 300px;               /* sets the height of the header div to 300px*/
+     height: 200px;               /* sets the height of the header div to 300px*/
      background-size: 100%;       /* ensures the picture fills the div*/
      background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
+   /*  position: fixed;*/
+     margin-top: 10px;
+     /*clear: both;*/
      /*box-shadow: 0 -5px 20px 5px ;*/ /* places a small shadow below the div, giving it some depth */
 }
 
-ul {
+.nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #009ACD;
     box-shadow: 0 5px 20px -5px ;
     float:right;
     opacity : .75;
     width: 78%;
-    margin-top: 10px;
+   /* margin-top: 10px;*/
     margin-right: 10px;
+    
    
 }
 
@@ -39,17 +43,43 @@ ul {
     background-color: #009ACD;
     opacity : .75;
     box-shadow: 0 5px 20px -5px ;
-    margin-top: 10px;
+   /* margin-top: 10px;*/
     margin-left: 10px;
+   
 
 }
 
-li {
+.flaire-div {
+  float: right;
+  opacity: .75;
+  height: 118px;
+  width: 78%;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: #009ACD;
+  box-shadow: 0 5px 20px -5px ;
+}
+
+#logo {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#flaire {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 130px;
+  width: 60%;
+}
+
+.nav-bar li {
     float: left;
    
 }
 
-li a {
+.nav-bar li a {
     display: block;
     color: white;
     text-align: center;
@@ -58,24 +88,77 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.nav-bar li a:hover {
     background-color: #111;
 }
 
-.active {
+.nav-bar .active {
     background-color: #003FFF;
 }
 
-.top-right {
+.nav-bar .top-right {
   float:right;
 
 }
 
-#logo {
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
+.pictureBar {
+  height: 300px;
+  width: 100%;
+  text-align: center;
 }
-  /*height:42px;
-  width: 100px;*/
+.main-content {
+  /*background-color: #009ACD;*/
+  width: 100%;
+  height: 300px;
+  /*padding-top: 300px;*/
+  margin-left: 10px;
+  margin-right: 10px;
+  clear: both;
 }
+   /*List Items should be displayed horizontally and floated to the left.*/
+  .pictureBar ul {
+    background-color: #009ACD;
+    margin-top: 30px;
+  }
+ .pictureBar li {
+    display: inline-block;
+    /*float: left;*/
+    margin-right: 75px;
+    margin-left: 3px;
+    margin-top: 30px;
+   /* padding: 15px 15px;*/
+    text-decoration: none;
+     box-shadow: 0 5px 20px -5px ;
+  }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .75;
+  width: 100%;
+  background-color: #009ACD;
+  height: 40px;
+
+}
+.footer ul {
+
+  text-align: center;
+  background-color: #009ACD;
+  
+  box-shadow: 10px 10px 20px -5px ;
+  list-style-type: none;
+  
+  bottom: 0;
+  
+}
+   
+.footer li {
+  background-color: #009ACD;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
