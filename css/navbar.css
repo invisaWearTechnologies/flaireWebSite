@@ -6,6 +6,25 @@ html, body {            /* overall style of each page */
   background-color: #cccccc; /* sets background color of each page to a light gray */
 }
 
+.about-pic {
+  width: 100%;
+  height: 300px;
+}
+
+.about-list {
+  list-style-type: none;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.about-list li a {
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+}
 .header {
                                   /* image obtained from takeadaytrip.com http://takeadaytrip.com/great-places/massachusetts/horn-pond-woburn-winchester-ma/
                                   /*Directs page to where the picture is located*/
@@ -101,6 +120,18 @@ html, body {            /* overall style of each page */
 
 }
 
+.descriptionBar {
+  list-style-type: none;
+  display: inline;
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.descriptionBar li {
+  display: inline;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 .pictureBar {
   height: 300px;
   width: 100%;
