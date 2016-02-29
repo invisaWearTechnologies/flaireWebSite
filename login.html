@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>
+      Create Account/Login
+    </title>
+
+    <!-- The css link -->
+    <link type="text/css" rel="stylesheet" href="css/login.css" >
+    <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen" >
+
+  </head>
+  <body>
+
+	 <div class='container'>
+     <div class='header'> <!-- creates a div for the header for the page, the image and navbar -->
+        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
+        <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div>
+          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
+          	
+            <li> <a href=''>HOME</a> </li> <!-- a link to the home page -->
+            <li> <a href=''>SHOP</a> </li> <!-- a link to the page listing the products-->
+            <li> <a href=''>ABOUT</a> </li> <!-- a link to the page with about info -->
+            <li class='top-right'> <a class="active" href=''>CREATE ACCOUNT/LOGIN </a> </li>
+            <li class='top-right'>  <a href=''>CART </a> </li>
+          </ul> 
+        </div>
+      </div>
+
+    <!--  -->
+    <fieldset id="login">
+      <legend>Login</legend>
+      <form id="input" name="input" action="A7.html" method="GET" >
+        <p>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Username">
+        </p>
+        <p>
+          <label for="password">Password</label> 
+          <input type="text" id="password" name="password" placeholder="Password">
+        </p>
+        <input type="submit" value="Login" id="loginbutton">
+      </form>
+    </fieldset>
+
+<!--  -->
+    <fieldset id="create">
+      <legend>Create invisaWear Account</legend>
+      <form id="input2" name="input" action="login.html" method="GET" >
+        <p>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+        </p>
+        <p>
+          <label for="email">Email Address</label> 
+          <input type="text" id="email" name="email" placeholder="Email Address">
+        </p>
+        <p>
+          <label for="Username">Username</label>
+          <input type="text" id="Username" name="Username" placeholder="Username">
+        </p>
+        <p>
+          <label for="Password">Password</label> 
+          <input type="text" id="Password" name="Password" placeholder="Password">
+        </p>
+        <input type="submit" value="Create Account" id="createaccount">
+      </form>
+    </fieldset>
+
+  </body>
+</html>

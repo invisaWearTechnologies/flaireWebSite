@@ -1,0 +1,67 @@
+#login
+{
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  width : 350px;
+  height: 300px;
+  border : 2px solid black;
+  font-family : Helvetica;
+  font-weight : bold;
+  background-color: #009ACD;
+}
+
+#create
+{
+  position: absolute;
+  left: 776px;
+  top: 250px;
+  width : 350px;
+  height: 300px;
+  border : 2px solid black;
+  font-family : Helvetica;
+  font-weight : bold;  
+  background-color: #009ACD;
+}
+
+/* the margin for the input boxes */
+#username,#password,#fullname,#email,#Username,#Password
+{
+  margin: 5px;
+}
+
+#password
+{
+  margin-left: 7px;
+}
+
+#fullname, #Username
+{
+  margin-left: 39px;
+}
+
+#Password
+{
+  margin-left: 40px;
+}
+
+#input, #input2
+{
+  margin-left: 4%;
+}
+
+/* properties for the submit button */
+#loginbutton
+{
+  margin-left: 63%;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+#createaccount
+{
+  margin-left: 56%;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
