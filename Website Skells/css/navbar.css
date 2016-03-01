@@ -15,12 +15,16 @@ html, body {            /* overall style of each page */
      height: 200px;               /* sets the height of the header div to 300px*/
      background-size: 100%;       /* ensures the picture fills the div*/
      background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
-   /*  position: fixed;*/
+     position: fixed;
      margin-top: 10px;
      /*clear: both;*/
      /*box-shadow: 0 -5px 20px 5px ;*/ /* places a small shadow below the div, giving it some depth */
 }
 
+
+.nav-bar {
+  position: fixed;
+}
 .nav-bar ul {
     list-style-type: none;
     margin: 0;
