@@ -65,8 +65,8 @@
   margin-bottom: 5px;
 }
 
-legend
+legend, label
 {
   color:white;
 }
-}
+
