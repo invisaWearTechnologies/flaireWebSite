@@ -2,7 +2,11 @@ table
 {
   position:absolute;
   top:250px;
+<<<<<<< HEAD
   left: 30 px;
+=======
+  left:50px;
+>>>>>>> refs/remotes/origin/gh-pages
   text-align:center;
 }
 
