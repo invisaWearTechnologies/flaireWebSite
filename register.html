@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>
+      Register a Device
+    </title>
+
+    <!-- The css link -->
+    <link type="text/css" rel="stylesheet" href="css/register.css" >
+    <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen" >
+
+  </head>
+  <body>
+    <!--The Page Header Contains a Unique Spectrum of Colors and the Logo-->
+     <div class='header'> <!-- creates a div for the header for the page, the image and navbar -->
+        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
+        <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div>
+          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
+            <li> <a href=''>HOME</a> </li> <!-- a link to the home page -->
+            <li> <a href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info -->
+            <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products-->
+            <li class='top-right'> <a href='cart.html'>CART </a> </li>
+            <li class='top-right'> <a href='login.html'>CREATE ACCOUNT/LOGIN </a> </li>
+          </ul> 
+          <div class='flaire-div'> <img id="flaire" src="Flaire.png"> </div>
+        </div>
+     </div>
+
+    <!--  -->
+    <fieldset>
+      <legend>Register a Device</legend>
+      <form id="input" name="input" action="register.html" method="GET" >
+        <p>
+          <label for=Registration">Registration Number</label>
+          <input type="text" id="register" name="Registration" placeholder="Registation Number">
+        </p>
+          <input type="submit" value="Submit" id="submit">
+      </form>
+    </fieldset>
+  </body>
+</html>
