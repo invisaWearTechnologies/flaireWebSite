@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>
+      Shopping Cart
+    </title>
+
+    <!-- The css link -->
+    <link type="text/css" rel="stylesheet" href="css/cart.css" >
+    <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen" >
+
+  </head>
+  <body>
+
+     <div class='container'>
+     <div class='header'> <!-- creates a div for the header for the page, the image and navbar -->
+        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
+        <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div>
+          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
+          	
+            <li> <a href=''>HOME</a> </li> <!-- a link to the home page -->
+            <li> <a href=''>SHOP</a> </li> <!-- a link to the page listing the products-->
+            <li> <a href=''>ABOUT</a> </li> <!-- a link to the page with about info -->
+            <li class='top-right'> <a href=''>CREATE ACCOUNT/LOGIN </a> </li>
+            <li class='top-right'>  <a class="active" href=''>CART </a> </li>
+          </ul> 
+        </div>
+      </div>
+
+     <table id="cart">
+	<thead>
+          <tr>
+	    <th>Item</th>
+	    <th>Price</th>
+	    <th>Quantity</th>
+	  </tr>
+	</thead>
+	<tbody>
+           <tr>
+              <td>Rose Oval Locket 
+                  <p></p>
+                  <image src="Rose Oval Locket.jpg" alt="Rose Oval Locket" 
+              </td>
+              <td>
+                  $29.99 
+              <td>
+                  <input type="number" name="quantity" min="1" max="99" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td>Blue Pendant 
+                  <p></p>
+                  <image src="Light Gold Pendant.jpg" alt="Blue Pendant" width="300" height="300">
+              </td>
+              <td>
+                  $29.99 
+              <td>
+                  <input type="number" name="quantity" min="1" max="99" value="1">
+              </td>
+            </tr>
+	</tbody>
+</table>
+
+    <!--  -->
+      <form id="input" name="input" action="cart.html" method="GET" >
+          <input type="submit" value="Proceed to Checkout" id="checkout">
+      </form>
+  </body>
+</html>
