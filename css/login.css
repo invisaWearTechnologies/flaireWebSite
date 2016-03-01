@@ -8,7 +8,7 @@
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #009ACD;
+  background-color: #000000;
 }
 
 #create
@@ -21,7 +21,7 @@
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-color: #009ACD;
+  background-color: #000000;
 }
 
 /* the margin for the input boxes */
@@ -65,3 +65,8 @@
   margin-bottom: 5px;
 }
 
+legend
+{
+  color:white;
+}
+}
