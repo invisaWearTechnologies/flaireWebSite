@@ -1,8 +1,42 @@
+<<<<<<< HEAD
 fieldset
 {
   position: absolute;
   left: 500px;
   top: 250px;
+=======
+#information
+{
+  position: absolute;
+  left: 300px;
+  top: 250px;
+  width :600px;
+  height: 200px;
+  border : 2px solid black;
+  font-family : Helvetica;
+  font-weight : bold;
+  background-color: #009ACD;
+}
+
+#Medical
+{
+  position: absolute;
+  left: 900px;
+  top: 250px;
+  width :200px;
+  height: 200px;
+  border : 2px solid black;
+  font-family : Helvetica;
+  font-weight : bold;
+  background-color: #009ACD;
+}
+
+#registration
+{
+  position: absolute;
+  left: 400px;
+  top: 500px;
+>>>>>>> refs/remotes/origin/gh-pages
   width : 500px;
   height: 110px;
   border : 2px solid black;
@@ -18,10 +52,52 @@ fieldset
   width: 250px;
 }
 
+<<<<<<< HEAD
 
 #input
 {
   margin-left: 4%
+=======
+#space
+{
+  margin-left: 2%;
+}
+
+#box
+{
+  margin-left: 5px;
+  margin-bottom:15px;
+}
+
+#smallbox
+{
+  margin-left: 5px;
+  margin-bottom:10px;
+  width: 25px;
+}
+
+#dob
+{
+  margin-left: 5px;
+  margin-bottom:15px;
+  width: 100px;
+}
+
+#medical
+{
+  margin-left: 2px;
+  margin-bottom:10px;
+}
+
+#input
+{
+  margin-left:2%;
+}
+
+#input2
+{
+  margin-left: 4%;
+>>>>>>> refs/remotes/origin/gh-pages
 }
 
 /* properties for the submit button */
