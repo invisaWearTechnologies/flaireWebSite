@@ -1,0 +1,35 @@
+table 
+{
+  position:absolute;
+  top:250px;
+<<<<<<< HEAD
+  left: 30 px;
+=======
+  left:50px;
+>>>>>>> refs/remotes/origin/gh-pages
+  text-align:center;
+}
+
+th
+{
+  height: 100px;
+  width: 100px;
+}
+
+td
+{
+  height: 280px;
+}
+
+img
+{
+  height: 200px;
+  width: 200px;
+}
+
+#input
+{
+  position:absolute;
+  top:300px;
+  right: 400px;
+}
