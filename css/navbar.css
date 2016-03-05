@@ -6,23 +6,18 @@
 
 /*-------------------------------------- Overall style of each page --------------------------------------------------- */
 
-html, body {            
-  /*set margins to 0, so there's no wasted white space near the edges of the page */  
-  margin: 0;            
-  /* sets background color of each page to a light gray */
-  background-color: #cccccc; 
+html {
+	background: url("gold-heart.jpg");
 }
 
 /*--------------------------------------- Styles for Home Page ---------------------------------------------------------*/
 
 /* Styles for the header of the page (the div containing the navigation bar) */
 .header {
-     margin: auto;                	/*Ensures picture doesn't stretch outside div*/
      width: 100%;                 	/* sizes the div to the width of the screen*/
      height: 75px;               	/* sets the height of the header div to 75px*/
      background-size: 100%;       	/* ensures the picture fills the div*/
      background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
-     margin-top: 10px;
 }
 
 /* Styles for the Navigation Bar */
@@ -62,17 +57,33 @@ html, body {
 .nav-bar .top-right {
   float:right;
 }
+/* Styles for the Page's Text */
+.flaireHeader {
+	position: relative;
+	color: #000000;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 75px;
+	z-index: -1;
+}
 
+.flaireSubText {
+	color: #000000;	
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 50px;
+}
 /* Styles for the Contact Info Bar */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   opacity: .75;
   width: 100%;
   background-color: #000000;
   height: 40px;
+  margin-bottom: 45px;
 }
 
 .footer ul {
