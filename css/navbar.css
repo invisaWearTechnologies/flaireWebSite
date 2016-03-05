@@ -1,10 +1,99 @@
+/*
+ * Authors: Rajia Abdelaziz, Jeremey Daigneau, Madhu Prakash, Alex Chen
+ * Created: February 20, 2016
+ * Last Updated: 3/05/16 by Rajia Abdelaziz
+*/
 
+/*-------------------------------------- Overall style of each page --------------------------------------------------- */
 
-html, body {            /* overall style of each page */
-  
-  margin: 0;            /* set margins to 0, so there's no wasted white space near the edges of the page */
-  background-color: #cccccc; /* sets background color of each page to a light gray */
+html, body {            
+  /*set margins to 0, so there's no wasted white space near the edges of the page */  
+  margin: 0;            
+  /* sets background color of each page to a light gray */
+  background-color: #cccccc; 
 }
+
+/*--------------------------------------- Styles for Home Page ---------------------------------------------------------*/
+
+/* Styles for the header of the page (the div containing the navigation bar) */
+.header {
+     margin: auto;                	/*Ensures picture doesn't stretch outside div*/
+     width: 100%;                 	/* sizes the div to the width of the screen*/
+     height: 75px;               	/* sets the height of the header div to 75px*/
+     background-size: 100%;       	/* ensures the picture fills the div*/
+     background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
+     margin-top: 10px;
+}
+
+/* Styles for the Navigation Bar */
+.nav-bar ul {
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    background-color: #000000;
+    box-shadow: 0 5px 20px -5px ;
+    opacity : .75;
+    width: 100%;
+    z-index: 110;   
+}
+
+.nav-bar li {
+    float: left;
+     border-right: 1px solid #bbb;
+   
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #111;
+}
+
+.nav-bar .active {
+    background-color: #144c4d;
+}
+
+.nav-bar .top-right {
+  float:right;
+}
+
+/* Styles for the Contact Info Bar */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .75;
+  width: 100%;
+  background-color: #000000;
+  height: 40px;
+}
+
+.footer ul {
+  	text-align: center;
+  	background-color: #000000;
+  	box-shadow: 10px 10px 20px -5px ;
+  	list-style-type: none;
+  	bottom: 0;
+  
+}
+   
+.footer li {
+	background-color: #000000;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* ---------------------- Styles for About Page ------------------- */
 
 .about-pic {
   width: 90%;
@@ -40,180 +129,166 @@ html, body {            /* overall style of each page */
   height: 300px;
 }
 
+.about-image-content-b {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 80%;	
+  height: 400px;
+}
+
 .about-list li a {
     color: #000000;
     font-size: 30px;
     text-decoration: none;
 }
-.header {
-                                  /* image obtained from takeadaytrip.com http://takeadaytrip.com/great-places/massachusetts/horn-pond-woburn-winchester-ma/
-                                  /*Directs page to where the picture is located*/
-    /* background-image: url('flaireLogo.png');*/
-     margin: auto;                /*Ensures picture doesn't stretch outside div*/
-     width: 100%;                 /* sizes the div to the width of the screen*/
-     height: 200px;               /* sets the height of the header div to 300px*/
-     background-size: 100%;       /* ensures the picture fills the div*/
-     background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
-   /*  position: fixed;*/
-     margin-top: 10px;
-     /*clear: both;*/
-     /*box-shadow: 0 -5px 20px 5px ;*/ /* places a small shadow below the div, giving it some depth */
-}
 
-.nav-bar ul {
-    position: fixed;
-    list-style-type: none;
-    padding: 0;
-    /*overflow: hidden;*/
-    background-color: #000000;
-    box-shadow: 0 5px 20px -5px ;
-    /*float:right;*/
-    opacity : .75;
-    width: 100%;
-   /* margin-top: 10px;*/
-    /*margin-right: 10px;
-    margin-left: 10px;*/
-    z-index: 110;
-   
-}
+/*-------------------------------Styles for Shop Page --------------------------------------*/  
 
-.logo-div {
-    float: left;
-    width: 0%;
-    background-color: #000000;
-    opacity : .75;
-    box-shadow: 0 5px 20px -5px ;
-   /* margin-top: 10px;*/
-  /*margin-left: 10px;*/
-   z-index: 100;
-   padding: 0;
-
-}
-
-.flaire-div {
-  float: right;
-  opacity: .75;
-  height: 5%;
-  width: 100%;
-  margin-top: 5%;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: #000000;
-  box-shadow: 0 5px 20px -5px ;
-}
-
-#logo {
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#flaire {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 150px;
-  width: 60%;
-}
-
-.nav-bar li {
-    float: left;
-     border-right: 1px solid #bbb;
-   
-}
-
-.nav-bar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.nav-bar li a:hover {
-    background-color: #111;
-}
-
-.nav-bar .active {
-    background-color: #144c4d;
-}
-
-.nav-bar .top-right {
-  float:right;
-
-}
-
-.descriptionBar {
-  list-style-type: none;
-  display: inline;
-
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-.descriptionBar li {
-  display: inline;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
 .pictureBar {
-  height: 300px;
-  width: 100%;
-  text-align: center;
+  	height: 300px;
+  	width: 100%;
+  	text-align: center;
 }
+
+.pictureBar ul {
+  	background-color: #000000;
+	margin-top: 30px;
+}
+
+.pictureBar li {
+	display: inline-block;
+	margin-right: 75px;
+	margin-left: 3px;
+	margin-top: 30px;
+	text-decoration: none;
+	box-shadow: 0 5px 20px -5px ;
+}
+
+/* -----------------------------Styles for Next Page --------------------------------------*/
 .main-content {
-  /*background-color: #009ACD;*/
   width: 100%;
   height: 300px;
-  /*padding-top: 300px;*/
   margin-left: 10px;
   margin-right: 10px;
   clear: both;
-}
-   /*List Items should be displayed horizontally and floated to the left.*/
-  .pictureBar ul {
-    background-color: #000000;
-    margin-top: 30px;
-  }
- .pictureBar li {
-    display: inline-block;
-    /*float: left;*/
-    margin-right: 75px;
-    margin-left: 3px;
-    margin-top: 30px;
-   /* padding: 15px 15px;*/
-    text-decoration: none;
-     box-shadow: 0 5px 20px -5px ;
-  }
+}  
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: .75;
-  width: 100%;
-  background-color: #000000;
-  height: 40px;
-
+/* --------------------------- Styles for the FAQ Page ------------------------------------*/
+.title{
+	border: 25px solid white;
 }
-.footer ul {
-
-  text-align: center;
-  background-color: #000000;
-  
-  box-shadow: 10px 10px 20px -5px ;
-  list-style-type: none;
-  
-  bottom: 0;
-  
+.title li {
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
-   
-.footer li {
-  background-color: #000000;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.title h1{
+	text-align: center;
+}
+.title li a {
+    color: #000000;
+    font-size: 30px;
     text-decoration: none;
 }
-  
+.questions{
+	margin-left: 30px;
+	border: 25px solid black;
+}
+.questions h2{
+	 font-weight: bold;
+}
+.questions p {
+		margin-left: 50px;
+	    font-family: "Times New Roman", Times, serif;
+}
+/* --------------------------- Styles for the About the Developers Page -------------------*/
+.dev_title{
+	border: 25px solid black;	
+}
+.dev_title h1{
+	color:green;
+	text-align: center;
+}
+.madhu{
+	border: 25px solid white;
+}
+.madhu h2{
+	color: teal;
+	font-weight: bold;
+}
+.madhu p{
+	font-family: "Times New Roman", Times, serif;
+}
+.madhu_pic{
+	float: right;
+    margin: 0 0 10px 10px;
+	width: 160px;
+    height: 210px;		
+}
+.rajia{
+	border: 25px solid blue;
+}
+.rajia h2{
+	color: teal;
+	font-weight: bold;
+}
+.rajia_pic{
+	float: right;
+    margin: 0 0 10px 10px;
+	width: 160px;
+    height: 190px;	
+}
+.rajia p{
+	font-family: "Times New Roman", Times, serif;
+}
+.alex{
+	border: 25px solid white;
+}
+.alex_pic{
+	float: right;
+    margin: 0 0 10px 10px;
+	width: 140px;
+    height: 130px;	
+}
+.alex h2{
+	color: teal;
+	font-weight: bold;
+}
+.alex p{
+	font-family: "Times New Roman", Times, serif;
+}
+.jeremy{
+	border: 25px solid blue;
+}
+.jeremy_pic{
+	float: right;
+    margin: 0 0 10px 10px;
+	width: 140px;
+    height: 130px;	
+}
+.jeremy h2{
+	color: teal;
+	font-weight: bold;
+}
+.jeremy p{
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ------------------------------Styles for the Set-Up Device Page ------------*/
+.device_setup{
+	border: 25px solid black;	
+}
+.device_setup h1{
+	color:green;
+	text-align: center;
+}
+.device_setup li{
+	font-size: 130%;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.device_pic{
+	width: 100px%;
+  height: 100px;
+}

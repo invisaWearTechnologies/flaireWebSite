@@ -4,47 +4,44 @@
  --> 
  <!DOCTYPE html> 
  
- 
  <html lang="en-us"> 
  <head> 
  	<meta charset="UTF-8"> 
  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
  
- 
  	<!--Page Title--> 
  	<title>invisaWearTechnologies</title> 
- 
  
  	<!--Google Font for Text--> 
  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
  
- 
  	<!--Style Sheets--> 
- 	<link rel="StyleSheet" type="text/css" href="css/setup_device_css.css" media="screen"> 
+ 	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
  </head> 
  <body> 
- 
- 
- 	<!--The Page Header Contains a Unique Spectrum of Colors and the Logo--> 
-      <div class='header'> <!-- creates a div for the header for the page, the image and navbar --> 
-         <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar --> 
-         <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> 
-           <ul class='links'> <!-- a div that contains the list of links to other parts of the site--> 
-             <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page --> 
-             <li> <a class="active" href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info --> 
-             <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products--> 
-             <li class='top-right'> <a href=''>CREATE ACCOUNT/LOGIN </a> </li> 
-             <li class='top-right'> <a href=''>CART </a> </li> 
-           </ul>  
-           <div class='flaire-div'> <img id="flaire" src="flaire.png"> </div> 
-         </div> 
-      </div> 
- 
-	
- 	<!--Pictures of Slides. Please Note: This will be a slideshow in the future.-->  
-	<image class="about-pic" src="about_page_pic.jpg" alt="About Page Picture">
+ 	<!--Page Header Containing Navigation Bar-->
+     <div class='header'> 
+     	<!-- creates a div within the header that contains just the navbar-->
+        <div class='nav-bar'> 
+          <!--ul containing page links-->
+          <ul class='links'> 
+            <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page-->
+            <li> <a class="active" href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info-->
+            <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products-->
+            <li class='top-right'> <a href='cart.html'>CART </a> </li> <!-- a link to the cart-->
+            <li class='top-right'> <a href='login.html'>CREATE ACCOUNT/LOGIN </a> </li> <!-- a link to the create account/login page-->
+          </ul> 
+        </div>
+     </div>
+
+    <!--Image of Jewlery-->
+    <div>
+		<image class="about-image-content-a" src="images/about_page_pic.jpg" alt="About Page Picture">
+	</div>
+
+	<!--Instructions to Set-Up Device -->
  	<div class='device_setup'> 
- 		<h1>How to Set Up the Device <image class="device_pic" src="Rose_Oval_Locket.jpg" alt="device picture"></h1> 
+ 		<h1>How to Set Up the Device <image class="device_pic" src="images/Rose_Oval_Locket.jpg" alt="device picture"></h1> 
 		
 		<h2> Follow the below steps to setup the device: </h2>
 		<li>1. Press Setup to configure the app.</li>
