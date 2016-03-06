@@ -1,33 +1,49 @@
+#loginname
+{
+  position:absolute;
+  top: 26%;
+  left: 25%;
+}
+
+#createname
+{
+  position:absolute;
+  top: 26%;
+  left: 50%;
+}
+
 #login
 {
   position: absolute;
-  left: 400px;
-  top: 250px;
-  width : 350px;
-  height: 300px;
+  left: 25%;
+  top: 35%;
+  width : 320px;
+  height: 250px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #736F6E;
+  background-color: #D3D3D3;
 }
 
 #create
 {
   position: absolute;
-  left: 776px;
-  top: 250px;
-  width : 350px;
-  height: 300px;
+  left: 50%;
+  top: 35%;
+  width : 320px;
+  height: 250px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-color: #736F6E;
+  background-color: #D3D3D3;
 }
+
 
 /* the margin for the input boxes */
 #username,#password,#fullname,#email,#Username,#Password
 {
   margin: 5px;
+  width: 55%;
 }
 
 #password
@@ -37,7 +53,7 @@
 
 #fullname, #Username
 {
-  margin-left: 39px;
+  margin-left: 39px;rm
 }
 
 #Password
@@ -53,19 +69,15 @@
 /* properties for the submit button */
 #loginbutton
 {
-  margin-left: 63%;
+  margin-left: 69%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
 #createaccount
 {
-  margin-left: 56%;
+  margin-left: 61%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
-legend, label
-{
-  color:black;
-}
