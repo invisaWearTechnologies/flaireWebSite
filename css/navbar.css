@@ -7,9 +7,18 @@
 /*-------------------------------------- Overall style of each page --------------------------------------------------- */
 
 html {
+	background: url(" ");
+	background-color: #FFFFFF;
+}
+
+.home-bkg {
 	background: url("gold-heart.jpg");
 }
 
+h1 {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
 /*--------------------------------------- Styles for Home Page ---------------------------------------------------------*/
 
 /* Styles for the header of the page (the div containing the navigation bar) */
@@ -34,8 +43,7 @@ html {
 
 .nav-bar li {
     float: left;
-     border-right: 1px solid #bbb;
-   
+    border-right: 1px solid #bbb;  
 }
 
 .nav-bar li a {
@@ -116,11 +124,18 @@ html {
 
 .about-list {
   list-style-type: none;
+  font-family: 'Playfair Display', serif;
+  margin-top: 50px;
+}
+
+.about-list ul {
+	font-family: 'Playfair Display', serif;
 }
 
 .about-list li {
     margin-bottom: 10px;
     margin-left: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 .image-content {
@@ -153,6 +168,7 @@ html {
     color: #000000;
     font-size: 30px;
     text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
 
 /*-------------------------------Styles for Shop Page --------------------------------------*/  
@@ -170,13 +186,83 @@ html {
 
 .pictureBar li {
 	display: inline-block;
-	margin-right: 75px;
-	margin-left: 3px;
+	margin-right: 100px;
+	margin-left: 10px;
 	margin-top: 30px;
 	text-decoration: none;
-	box-shadow: 0 5px 20px -5px ;
+	box-shadow: 0 10px 20px 5px ;
 }
 
+.componentsTag {
+	margin-left: 100px;
+	font-family: 'Playfair Display', serif;
+}
+
+.descriptionBar {
+	text-align: center;
+}
+
+.descriptionBar ul {
+    list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.descriptionBar li {
+    display: inline;
+    margin-right: 130px;
+	margin-left: 80px;
+	text-decoration: none;
+}
+
+.descriptionBar li a {
+	text-decoration: none;
+	color: black;
+}
+
+.bundles-descriptionBar {
+	text-align: center;
+}
+
+.bundles-descriptionBar ul {
+    list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.bundles-descriptionBar li {
+    display: inline;
+    margin-right: 80px;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+.bundles-descriptionBar li a {
+	text-decoration: none;
+	color: black;
+}
+
+.watches-descriptionBar {
+	text-align: center;
+}
+
+.watches-descriptionBar ul {
+    list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.watches-descriptionBar li {
+    display: inline;
+    margin-right: 110px;
+	margin-left: 50px;
+	text-decoration: none;
+}
+
+.watches-descriptionBar li a {
+	text-decoration: none;
+	color: black;
+}
 /* -----------------------------Styles for Next Page --------------------------------------*/
 .main-content {
   width: 100%;
@@ -207,29 +293,35 @@ html {
 	border: 25px solid black;
 }
 .questions h2{
-	 font-weight: bold;
+	font-weight: bold;
+	margin-left: 25px;
+	margin-right:25px;
+	font-family: 'Playfair Display', serif;
 }
 .questions p {
-		margin-left: 50px;
-	    font-family: "Times New Roman", Times, serif;
+	margin-left: 75px;
+	margin-right:75px;
+	font-family: "Times New Roman", Times, serif;
 }
 /* --------------------------- Styles for the About the Developers Page -------------------*/
 .dev_title{
-	border: 25px solid black;	
+	border: 25px solid black;
+	font-family: 'Playfair Display', serif;	
 }
 .dev_title h1{
-	color:green;
+	color:black;
 	text-align: center;
 }
 .madhu{
 	border: 25px solid white;
 }
 .madhu h2{
-	color: teal;
+	color:  #736F6E;
 	font-weight: bold;
 }
 .madhu p{
 	font-family: "Times New Roman", Times, serif;
+	margin-left: 30px;
 }
 .madhu_pic{
 	float: right;
@@ -238,20 +330,22 @@ html {
     height: 210px;		
 }
 .rajia{
-	border: 25px solid blue;
+	border: 25px solid gray;
 }
 .rajia h2{
-	color: teal;
+	color:  #736F6E;
 	font-weight: bold;
 }
 .rajia_pic{
 	float: right;
-    margin: 0 0 10px 10px;
+    margin: 10 0 10px 10px;
 	width: 160px;
     height: 190px;	
+    margin-top: 12px;
 }
 .rajia p{
 	font-family: "Times New Roman", Times, serif;
+	margin-left: 30px;
 }
 .alex{
 	border: 25px solid white;
@@ -263,14 +357,15 @@ html {
     height: 130px;	
 }
 .alex h2{
-	color: teal;
+	color: #736F6E;
 	font-weight: bold;
 }
 .alex p{
 	font-family: "Times New Roman", Times, serif;
+	margin-left: 30px;
 }
 .jeremy{
-	border: 25px solid blue;
+	border: 25px solid gray;
 }
 .jeremy_pic{
 	float: right;
@@ -279,10 +374,12 @@ html {
     height: 130px;	
 }
 .jeremy h2{
-	color: teal;
+	font-family: 'Playfair Display', serif;	
+	color: #736F6E;
 	font-weight: bold;
 }
 .jeremy p{
+	margin-left: 30px;
 	font-family: "Times New Roman", Times, serif;
 }
 
@@ -291,7 +388,7 @@ html {
 	border: 25px solid black;	
 }
 .device_setup h1{
-	color:green;
+	color: #736F6E;
 	text-align: center;
 }
 .device_setup li{

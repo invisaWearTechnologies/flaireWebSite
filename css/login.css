@@ -8,7 +8,7 @@
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  background-color: #736F6E;
 }
 
 #create
@@ -21,7 +21,7 @@
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-color: #000000;
+  background-color: #736F6E;
 }
 
 /* the margin for the input boxes */
@@ -67,9 +67,5 @@
 
 legend, label
 {
-  color:white;
+  color:black;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> gh-pages
