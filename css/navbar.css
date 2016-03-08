@@ -9,10 +9,12 @@
 html {
 	background: url(" ");
 	background-color: #FFFFFF;
+	background-repeat: no-repeat;
 }
 
 .home-bkg {
 	background: url("gold-heart.jpg");
+	background-repeat: no-repeat;
 }
 
 h1 {
