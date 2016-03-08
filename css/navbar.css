@@ -292,7 +292,7 @@ h1 {
 }
 .questions{
 	margin-left: 30px;
-	border: 25px solid black;
+	border: 10px solid black;
 }
 .questions h2{
 	font-weight: bold;
@@ -307,15 +307,19 @@ h1 {
 }
 /* --------------------------- Styles for the About the Developers Page -------------------*/
 .dev_title{
-	border: 25px solid black;
-	font-family: 'Playfair Display', serif;	
+	font-family: 'Playfair Display', serif;
+	width: 100%
+	height:100%
 }
 .dev_title h1{
 	color:black;
 	text-align: center;
 }
 .madhu{
-	border: 25px solid white;
+	border: 5px solid black;
+	float: left;
+	width: 40%;
+	height: 30%
 }
 .madhu h2{
 	color:  #736F6E;
@@ -327,12 +331,16 @@ h1 {
 }
 .madhu_pic{
 	float: right;
-    margin: 0 0 10px 10px;
-	width: 160px;
-    height: 210px;		
+	width: 20%;
+    height: 70%;
+	margin:10px
 }
 .rajia{
-	border: 25px solid gray;
+	border: 5px solid black;
+	float: right;
+	width: 40%;
+	height:40%
+	
 }
 .rajia h2{
 	color:  #736F6E;
@@ -340,23 +348,26 @@ h1 {
 }
 .rajia_pic{
 	float: right;
-    margin: 10 0 10px 10px;
-	width: 160px;
-    height: 190px;	
-    margin-top: 12px;
+	width: 20%;
+    height: 70%;
+	margin:10px	
 }
 .rajia p{
 	font-family: "Times New Roman", Times, serif;
 	margin-left: 30px;
 }
 .alex{
-	border: 25px solid white;
+	border: 5px solid black;
+	float: left;
+	clear: left;
+	width: 40%;
+	height: 30%
 }
 .alex_pic{
 	float: right;
-    margin: 0 0 10px 10px;
-	width: 140px;
-    height: 130px;	
+	width: 20%;
+    height: 70%;
+	margin:10px	
 }
 .alex h2{
 	color: #736F6E;
@@ -367,13 +378,17 @@ h1 {
 	margin-left: 30px;
 }
 .jeremy{
-	border: 25px solid gray;
+	border: 5px solid black;
+	float: right;
+	clear: right;
+	width: 40%;
+	height: 40%
 }
 .jeremy_pic{
 	float: right;
-    margin: 0 0 10px 10px;
-	width: 140px;
-    height: 130px;	
+	width: 15%;
+    height: 60%;
+	margin:10px	
 }
 .jeremy h2{
 	font-family: 'Playfair Display', serif;	
@@ -387,18 +402,32 @@ h1 {
 
 /* ------------------------------Styles for the Set-Up Device Page ------------*/
 .device_setup{
-	border: 25px solid black;	
+	border: 10px solid black;	
+	width: 50%;
+	height: 50%;
+	float: right;
+	margin-right: 10%;
 }
-.device_setup h1{
-	color: #736F6E;
-	text-align: center;
+.deviceInfo{
+	width: 100%
 }
+.device_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 100%;	
+  height: 50%;
+}
+
 .device_setup li{
 	font-size: 130%;
+	list-style-type:decimal-leading-zero;
 	margin-left: 30px;
 	margin-bottom: 30px;
 }
 .device_pic{
-	width: 100px%;
-  height: 100px;
+  width: 30%;
+  height: 30%;
+  float: left;
 }
