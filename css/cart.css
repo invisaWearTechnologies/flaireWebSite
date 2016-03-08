@@ -2,6 +2,7 @@
  * Author: Alex Chen
  */
 
+/*changes the properties for the table which holds the items in the shopping cart */
 table 
 {
   position:absolute;
@@ -12,6 +13,7 @@ table
   border-collapse: collapse;
 }
 
+/* changes properties for the column headers in the table */
 th
 {
   height: 50px;
@@ -19,18 +21,21 @@ th
   border: 2px solid;
 }
 
+/* changes properties for the rows in the table */
 td
 {
   height: 270px;
   border-bottom: 2px solid;
 }
 
+/* changes properties for the images in the table */
 img
 {
   height: 200px;
   width: 200px;
 }
 
+/* changes properties for the submit button */
 #input
 {
   position:fixed;
