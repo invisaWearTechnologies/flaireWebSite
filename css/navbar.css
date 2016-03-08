@@ -15,6 +15,7 @@ html {
 .home-bkg {
 	background: url("gold-heart.jpg");
 	background-repeat: no-repeat;
+	 background-size: 100%;
 }
 
 h1 {
