@@ -1,6 +1,7 @@
-<!--Author:         Rajia M. Abdelaziz, UMass Lowell Undergraduate
+<!--
+	Author:         Rajia M. Abdelaziz, UMass Lowell Undergraduate
 	Created:        February 19, 2016
-	Last Updated:   March 05, 2016 at 2:00 p.m 
+	Last Updated:   April 03, 2016 at 12:10 a.m 
 -->
 <!DOCTYPE html>
 
@@ -22,31 +23,97 @@
 </head>
 
 <body>
-	 <!--Page Header Containing Navigation Bar-->
-     <div class='header'> 
-     	<!-- creates a div within the header that contains just the navbar-->
-        <div class='nav-bar'> 
-          <!--ul containing page links-->
-          <ul class='links'> 
-            <li> <a class="active" href=''>HOME</a> </li> <!-- a link to the home page-->
-            <!-- a link to the page with about info-->
-            <li> <a href='about.html'>ABOUT</a> </li> 
-            <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products-->
-            <li class='top-right'> <a href='cart.html'>CART </a> </li> <!-- a link to the cart-->
-            <li class='top-right'> <a href='login.html'>CREATE ACCOUNT/LOGIN </a> </li> <!-- a link to the create account/login page-->
-          </ul> 
-        </div>
-     </div>
-	<h1 class="flaireHeader">Flaire</h1>
-    <h2 class="flaireSubText">Smart Jewelry that Keeps You Safe and Secure</h2>
-	<!--Contact Information Bar-->
-	<div class="footer">
-	 <ul class="contactInfoBar">
-	 	<!--Contains Contact Information including email and phone number.-->
-		<li><p>Contact Us:</p></li>
-		<li><p>invisaWearTechnologies@gmail.com</p></li>
-		<li><p>1-800-invisaWearTech</p></li>
-	</ul> 
-	</div>
+	<!--Slide 0: Website Title and Navigation Bar-->
+	<section id="slide-0" class="homeSlideZero">
+    	<div class="bcg">
+        	<div class="hsContainer">
+					<h1>Flaire</h1>
+	      			<div class="navi">
+		      			<ul>
+			      			<li class="active"><a>HOME</a></li>
+			      			<li><a href='about.html'>ABOUT</a></li>
+			      			<li><a href='shop.html'>SHOP</a></li>
+			      			<li><a href='login.html'>CREATE ACCOUNT/LOGIN</a></li>
+			      			<li><a href='cart.html'>CART</a></li>
+		      			</ul>
+		      		</div>
+        	</div>
+    	</div>
+    </section>
+
+	<hr>
+
+	<!--Slide 1: Product Image, Description and More Details Button-->
+    <section id="slide-1" class="homeSlideOne">
+    	<div class="bcg">
+	    	<div class="hsContainer">
+	    		<img src="img/jewel.jpg">
+    			<div class="hsContent">
+    				<p><b>Smart Jewelry that Keeps You Safe and Secure</b></p>
+    				<button type="button" onClick="document.getElementById('slide-3').scrollIntoView();">Learn More</button>
+		    	</div>
+		    	
+	    	</div>
+	    </div>
+    </section>
+    <br>
+    <hr>
+    
+    <!--Slide 2: Contact Info Bar-->
+    <section id="slide-2" class="homeSlideTwo">
+    	<div class="bcg">
+	    	<div class="hsContainer">
+				<div class="hsContent">
+					<p><b>invisaWear Technologies</b></p>
+					<p><i>invisaWearTechnologies@gmail.com</i></p>
+					<img src="img/socialmedia.jpg">
+	    		</div>
+        	</div>
+    	</div>
+    </section>
+	<hr>
+	<br>
+
+	<!--Slide 3: Image of Flaire Product -->		    		    
+	<section id="slide-3" class="homeSlideThree">
+		<div class="bcg">
+	    	<div class="hsContainer">
+    			<div class="hsContent">
+    				<img src="img/bcg_slide-3.jpg">
+		    	</div>
+	    	</div>
+	    </div>
+	</section>
+	
+	<br>
+	<hr>
+	<br>
+
+	<!--Slide 4: Description of What Flaire Is-->		    
+	<section id="slide-4" class="homeSlide">
+		<div class="bcg">
+	    	<div class="hsContainer">
+    			<div class="hsContent">
+		    	<h2>Flaire</h2>
+				<p>Flaire is a coin-sized component that fits into wearable devices. When pressed, it communicaties with a connected phone to send alert messages (containing location information) to pre-configured contacts or police.</p>
+		    	</div>
+	    	</div>
+	    </div>
+	</section>
+    <br>
+    <hr>
+    
+    <!--Slide 5: Additional Contact Info-->
+    <section id="slide-5" class="homeSlideFive">
+	    	<div class="bcg">
+		    	<div class="hsContainer">
+					<div class="hsContent">
+						<p><b>invisaWear Technologies</b></p>
+						<p><i>invisaWearTechnologies@gmail.com</i></p>
+						<img src="img/socialmedia.jpg">
+		    		</div>
+	        	</div>
+	    	</div>
+	    </section>
 </body>
 </html>
