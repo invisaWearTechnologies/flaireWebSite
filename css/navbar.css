@@ -241,12 +241,12 @@ hr {
 
 /*Slide 5: Extra Contact Bar */
 #slide-5 .hsContent {
-	background-color: Black;
+	background-color: white;
 	text-align: center;
 }
 	#slide-5 p {
 		top: 25%;
-		color: #FFFFFF;
+		color: Black;
 		font-family: Georgia;
 		font-size: 17px;
 	}
