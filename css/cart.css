@@ -1,35 +1,45 @@
+/*
+ * Author: Alex Chen
+ */
+
+/*changes the properties for the table which holds the items in the shopping cart */
 table 
 {
   position:absolute;
-  top:250px;
-<<<<<<< HEAD
-  left: 30 px;
-=======
-  left:50px;
->>>>>>> refs/remotes/origin/gh-pages
+  left:0.6%;
+  top:15%;
   text-align:center;
+  background: #D3D3D3;
+  border-collapse: collapse;
 }
 
+/* changes properties for the column headers in the table */
 th
 {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 200px;
+  border: 2px solid;
 }
 
+/* changes properties for the rows in the table */
 td
 {
-  height: 280px;
+  height: 270px;
+  border-bottom: 2px solid;
 }
 
+/* changes properties for the images in the table */
 img
 {
   height: 200px;
   width: 200px;
 }
 
+/* changes properties for the submit button */
 #input
 {
-  position:absolute;
-  top:300px;
+  position:fixed;
   right: 400px;
+  top: 60%;
+  left: 700px;
 }

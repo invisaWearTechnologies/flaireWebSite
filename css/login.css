@@ -1,75 +1,92 @@
+/* properties for the login title */
+#loginname
+{
+  position:absolute;
+  top: 26%;
+  left: 25%;
+}
+
+/* properties for the create an account title */
+#createname
+{
+  position:absolute;
+  top: 26%;
+  left: 50%;
+}
+
+/* properties for the login fieldset */
 #login
 {
   position: absolute;
-  left: 400px;
-  top: 250px;
-  width : 350px;
-  height: 300px;
+  left: 25%;
+  top: 35%;
+  width : 320px;
+  height: 250px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  background-color: #D3D3D3;
 }
 
+/* properties for the create fieldset */
 #create
 {
   position: absolute;
-  left: 776px;
-  top: 250px;
-  width : 350px;
-  height: 300px;
+  left: 50%;
+  top: 35%;
+  width : 320px;
+  height: 250px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-color: #000000;
+  background-color: #D3D3D3;
 }
+
 
 /* the margin for the input boxes */
 #username,#password,#fullname,#email,#Username,#Password
 {
   margin: 5px;
+  width: 55%;
 }
 
+/* margin for the #password input box in the login fieldset */
 #password
 {
   margin-left: 7px;
 }
 
+/* margin for specific input box */
 #fullname, #Username
 {
-  margin-left: 39px;
+  margin-left: 39px;rm
 }
 
+/* margin for the #Password input box in the create fieldset */
 #Password
 {
   margin-left: 40px;
 }
 
+/* margin for the form tables */
 #input, #input2
 {
   margin-left: 4%;
 }
 
-/* properties for the submit button */
+/* properties for the login submit button */
 #loginbutton
 {
-  margin-left: 63%;
+  margin-left: 69%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
+/* properties for the create submit button */
 #createaccount
 {
-  margin-left: 56%;
+  margin-left: 61%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
-legend, label
-{
-  color:white;
-}
-<<<<<<< HEAD
-
-=======
->>>>>>> gh-pages

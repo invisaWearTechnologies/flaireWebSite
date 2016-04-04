@@ -1,41 +1,56 @@
+<!--
+	File:			Login.html
+	Author:         Alex Chen, UMass Lowell Undergraduate
+	Created:        February 23, 2016
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset=utf-8>
-    <title>
-      Create Account/Login
-    </title>
-
+    <title>Create Account/Login</title>
+  
     <!-- The css link -->
     <link type="text/css" rel="stylesheet" href="css/login.css" >
     <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen" >
 
+    <!-- The jquery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+    <!-- The jquery validation plugin -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+
+    <!-- The link to the javascript code -->
+    <script type="text/javascript" src="login.js"></script>
+
   </head>
   <body>
-     <!--The Page Header Contains a Unique Spectrum of Colors and the Logo-->
-     <div class='header'> <!-- creates a div for the header for the page, the image and navbar -->
-        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
-        <!-- <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> -->
-          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
-            <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page -->
-            <li> <a href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info -->
-            <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products-->
-            <li class='top-right'> <a href='cart.html'>CART </a> </li>
-            <li class='top-right'> <a class="active" href='login.html'>CREATE ACCOUNT/LOGIN </a> </li>
-          </ul> 
-          <div class='flaire-div'> <img id="flaire" src="Flaire.png"> </div>
-        </div>
+    
+     <!--Page Header Containing Navigation Bar-->
+     <div class='header'> 
+     	<!-- creates a div within the header that contains just the navbar-->
+        <div class="navi">
+  			<ul>
+  				<li class="flaireicon"><a>FLAIRE</a></li>
+      			<li><a href='index.html'>HOME</a></li>
+      			<li><a href='about.html'>ABOUT</a></li>
+      			<li><a href='shop.html'>SHOP</a></li>
+      			<li><a href='login.html'>CREATE ACCOUNT/LOGIN</a></li>
+      			<li><a href='cart.html'>CART</a></li>
+  			</ul>
+  		</div>
+  		<hr>
      </div>
 
-    <!--  -->
-    <fieldset id="login">
-      <legend>Login</legend>
-<<<<<<< HEAD
+   <h3 id="loginname"> Login </h3>
+   <h3 id="createname"> Create invisaWear Account </h3>
 
-      <form id="input" name="input" action="register.html" method="GET" >
-=======
->>>>>>> gh-pages
-      <form id="input" name="input" action="register.html" method="GET" >
+    <!-- Login Fieldset -->
+    <fieldset id="login">
+      <form id="input" name="input" action="index.html" method="GET" >
         <p>
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="Username">
@@ -48,14 +63,8 @@
       </form>
     </fieldset>
 
-<!--  -->
+	<!-- Create Account Fieldset -->
     <fieldset id="create">
-      <legend>Create invisaWear Account</legend>
-<<<<<<< HEAD
-
-      <form id="input2" name="input" action="register.html" method="GET" >
-=======
->>>>>>> gh-pages
       <form id="input2" name="input" action="register.html" method="GET" >
         <p>
           <label for="fullname">Full Name</label>

@@ -14,49 +14,191 @@
 
 	<!--Google Font for Text-->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
 
 	<!--Style Sheets-->
 	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
+
+	<!--Carousel 1-->
+	<!-- Insert to your webpage before the </head> -->
+    <script src="carouselengine/jquery.js"></script>
+    <script src="carouselengine/amazingcarousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-1.css">
+    <script src="carouselengine/initcarousel-1.js"></script>
+    <!-- End of head section HTML codes -->
+
+    <!-- Carousel 2-->
+    <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-2.css">
+    <script src="carouselengine/initcarousel-2.js"></script>
+
+    <!-- Carousel 3 -->
+    <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-3.css">
+    <script src="carouselengine/initcarousel-3.js"></script>
 </head>
 <body>
 
-	<!--The Page Header Contains a Unique Spectrum of Colors and the Logo-->
-     <div class='header'> <!-- creates a div for the header for the page, the image and navbar -->
-        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
-       <!--  <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> -->
-          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
-            <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page -->
-            <li> <a href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info -->
-            <li> <a class="active" href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products-->
-            <li class='top-right'> <a href='cart.html'>CART </a> </li>
-            <li class='top-right'> <a href='login.html'>CREATE ACCOUNT/LOGIN </a> </li>
-          </ul> 
-          <div class='flaire-div'> <img id="flaire" src="Flaire.png"> </div>
-        </div>
+	<!--Page Header Containing Navigation Bar-->
+     <div class='header'> 
+     	<!-- creates a div within the header that contains just the navbar-->
+        <div class="navi">
+  			<ul>
+  				<li class="flaireicon"><a>FLAIRE</a></li>
+      			<li><a href='index.html'>HOME</a></li>
+      			<li><a href='about.html'>ABOUT</a></li>
+      			<li><a href='shop.html'>SHOP</a></li>
+      			<li><a href='login.html'>CREATE ACCOUNT/LOGIN</a></li>
+      			<li><a href='cart.html'>CART</a></li>
+  			</ul>
+  		</div>
+  		<hr>
      </div>
 
-	<ul class="pictureBar">
+    <!--Pictures of Components-->
+    <h2 class="componentsTag">Components</h2>
+	<div id="amazingcarousel-container-1">
+    <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+        <div class="amazingcarousel-list-container">
+            <ul class="amazingcarousel-list">
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/c1-lightbox.jpg" title="$50 Crystal Heart Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/c1.jpg"  alt="$50 Crystal Heart Flaire" /></a></div>
+<div class="amazingcarousel-title">$50 Crystal Heart Flaire</div>
+<div class="amazingcarousel-description"></div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/c2-lightbox.jpg" title="$40 Simple Silver Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/c2.jpg"  alt="$40 Simple Silver Flaire" /></a></div>
+<div class="amazingcarousel-title">$40 Simple Silver Flaire</div>
+<div class="amazingcarousel-description"></div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/Diamond Accent Oval Locket-lightbox.jpg" title="$50 Diamond Accent Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/Diamond Accent Oval Locket.jpg"  alt="$50 Diamond Accent Flaire" /></a></div>
+<div class="amazingcarousel-title">$50 Diamond Accent Flaire</div>
+<div class="amazingcarousel-description"></div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/Light Blue Locket-lightbox.jpg" title="$45 Aqua Pearl Flaire "  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/Light Blue Locket.jpg"  alt="$45 Aqua Pearl Flaire " /></a></div>
+<div class="amazingcarousel-title">$45 Aqua Pearl Flaire </div>
+<div class="amazingcarousel-description"></div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/Rose_Oval_Locket-lightbox.jpg" title="Rose Oval Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/Rose_Oval_Locket.jpg"  alt="Rose Oval Flaire" /></a></div>
+<div class="amazingcarousel-title">Rose Oval Flaire</div>
+<div class="amazingcarousel-description"></div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/Light Gold Pendant-lightbox.jpg" title="$50 Light Gold Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/Light Gold Pendant.jpg"  alt="$50 Light Gold Flaire" /></a></div>
+<div class="amazingcarousel-title">$50 Light Gold Flaire</div>
+<div class="amazingcarousel-description"></div>                    </div>
+                </li>
+            </ul>
+            <div class="amazingcarousel-prev"></div>
+            <div class="amazingcarousel-next"></div>
+        </div>
+        <div class="amazingcarousel-nav"></div>
+        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Image Scroller</a></div>
+    </div>
+</div>
 
-			<li> <a href='productDetails.html'> <image src="lock.jpg" alt="Blue Pendant" width="300" height="300"> </a></li>
-			<li> <a href='productDetails.html'><image src="Light Gold Pendant.jpg" alt="Blue Pendant" width="300" height="300"></li>
-			<li> <a href='productDetails.html'><image src="Light Blue Locket.jpg" alt="Crystal Pendant" width="300" height="300"></li>
+	<!--Pictures of Watches-->
+	<br/>
+    <br/>
+	<h2 class="componentsTag">Watches</h2>
+	<div id="amazingcarousel-container-2">
+    <div id="amazingcarousel-2" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+        <div class="amazingcarousel-list-container">
+            <ul class="amazingcarousel-list">
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/w1-lightbox.jpg" title="$100 White and Gold Watch"  class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w1.jpg"  alt="$100 White and Gold Watch" /></a></div>
+<div class="amazingcarousel-title">$100 White and Gold Watch</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/w2-lightbox.jpg" title="$100 Silver Men&apos;s Watch "  class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w2.jpg"  alt="$100 Silver Men&apos;s Watch " /></a></div>
+<div class="amazingcarousel-title">$100 Silver Men's Watch </div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/w3-lightbox.jpg" title="$100 Gold and Blue Watch "  class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w3.jpg"  alt="$100 Gold and Blue Watch " /></a></div>
+<div class="amazingcarousel-title">$100 Gold and Blue Watch </div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/w5-lightbox.jpg" title="$120 Bronze Diamond Watch "  class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w5.jpg"  alt="$120 Bronze Diamond Watch " /></a></div>
+<div class="amazingcarousel-title">$120 Bronze Diamond Watch </div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/w6-lightbox.jpg" title="$120 Black Rolex Watch "  class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w6.jpg"  alt="$120 Black Rolex Watch " /></a></div>
+<div class="amazingcarousel-title">$120 Black Rolex Watch </div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/w4-lightbox.jpg" title="$150 Silver Diamond Watch "  class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w4.jpg"  alt="$150 Silver Diamond Watch " /></a></div>
+<div class="amazingcarousel-title">$150 Silver Diamond Watch </div>                    </div>
+                </li>
+            </ul>
+            <div class="amazingcarousel-prev"></div>
+            <div class="amazingcarousel-next"></div>
+        </div>
+        <div class="amazingcarousel-nav"></div>
+        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">JavaScript Carousel</a></div>
+    </div>
+</div>
 
-			
+	<!--Pictures of Bundles-->
+	<br/>
+    <br/>
+	<h2 class="componentsTag">Bundles</h2>
+	<div id="amazingcarousel-container-3">
+    <div id="amazingcarousel-3" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+        <div class="amazingcarousel-list-container">
+            <ul class="amazingcarousel-list">
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/Hematite Pendant-lightbox.jpg" title="$100 Hematite Pendant Bundles"  class="html5lightbox" data-group="amazingcarousel-3"><img src="images/Hematite Pendant.jpg"  alt="$100 Hematite Pendant Bundles" /></a></div>
+<div class="amazingcarousel-title">$100 Hematite Pendant Bundles</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/DarkBluePend-lightbox.jpg" title="$100 Dark Blue Pendant Bundles"  class="html5lightbox" data-group="amazingcarousel-3"><img src="images/DarkBluePend.jpg"  alt="$100 Dark Blue Pendant Bundles" /></a></div>
+<div class="amazingcarousel-title">$100 Dark Blue Pendant Bundles</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/gold flower bundles-lightbox.jpg" title="$100 Gold Flower Bundles"  class="html5lightbox" data-group="amazingcarousel-3"><img src="images/gold flower bundles.jpg"  alt="$100 Gold Flower Bundles" /></a></div>
+<div class="amazingcarousel-title">$100 Gold Flower Bundles</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/n2-lightbox.png" title="$120 Aqua Rose Bundle"  class="html5lightbox" data-group="amazingcarousel-3"><img src="images/n2.png"  alt="$120 Aqua Rose Bundle" /></a></div>
+<div class="amazingcarousel-title">$120 Aqua Rose Bundle</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/n3-lightbox.png" title="$120 Pink Rose Necklace Bundle"  class="html5lightbox" data-group="amazingcarousel-3"><img src="images/n3.png"  alt="$120 Pink Rose Necklace Bundle" /></a></div>
+<div class="amazingcarousel-title">$120 Pink Rose Necklace Bundle</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="images/Red flower Bundles-lightbox.jpg" title="$100 Red Flower Bundles"  class="html5lightbox" data-group="amazingcarousel-3"><img src="images/Red flower Bundles.jpg"  alt="$100 Red Flower Bundles" /></a></div>
+<div class="amazingcarousel-title">$100 Red Flower Bundles</div>                    </div>
+                </li>
+            </ul>
+            <div class="amazingcarousel-prev"></div>
+            <div class="amazingcarousel-next"></div>
+        </div>
+        <div class="amazingcarousel-nav"></div>
+        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Scroller</a></div>
+    </div>
+</div>
+	<br/>
+    <br/>
 
-	</ul>
-
-<!--
-	<ul class="descriptionBar">
-			<li>Rose Oval Locket</li>
-			<li>Light Gold Pendant</li>
-			<li>Aqua Fantasy Locket</li>
-	</ul>
--->
-	<ul class="pictureBar">
-			<li><a href='productDetails.html'> <image src="GoldEngravedPend.jpg" alt="Blue Pendant" width="300" height="300"></li>
-			<li><a href='productDetails.html'><image src="Hematite Pendant.jpg" alt="Crystal Pendant" width="300" height="300"></li>
-			<li><a href='productDetails.html'><image src="gold flower bundles.jpg" alt="Crystal Pendant" width="300" height="300"></li>
-	</ul>	
-	
 </body>
 </html>

@@ -1,40 +1,65 @@
+
+/* css for the registration page */
+
+h2
+{
+  position:absolute;
+  left: 40%;
+  top: 20%;
+}
+
+#infoheader
+{
+  position: absolute;
+  left: 19%;
+  top: 32%;
+}
+
+#medheader
+{
+  position: absolute;
+  left: 61%;
+  top: 32%;
+}
+
+
 #information
 {
   position: absolute;
-  left: 300px;
-  top: 250px;
-  width :600px;
+  left: 19%;
+  top: 40%;
+  width :41%;
   height: 200px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  background-color: #D3D3D3;
 }
 
 #Medical
 {
   position: absolute;
-  left: 900px;
-  top: 250px;
+  left: 61%;
+  top: 40%;
   width :200px;
   height: 200px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  background-color: #D3D3D3;
 }
 
 #registration
 {
   position: absolute;
-  left: 400px;
-  top: 500px;
-  width : 500px;
-  height: 110px;
+  left: 30%;
+  top: 80%;
+  width : 34%;
+  height: 15%;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  background-color: #D3D3D3;
 }
 
 /* the margin for the input boxes */
@@ -73,6 +98,7 @@
 {
   margin-left: 2px;
   margin-bottom:10px;
+  width: 95%;
 }
 
 #input
@@ -88,12 +114,8 @@
 /* properties for the submit button */
 #submit
 {
-  margin-left: 45%;
+  margin-left: 43%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
-legend, label
-{
-  color:white;
-}
