@@ -1,45 +1,50 @@
+fieldset
+{
+  box-shadow: 10px 10px 5px #888888;
+}
+
 /* properties for the login title */
 #loginname
 {
-  position:absolute;
-  top: 26%;
-  left: 25%;
+  position:relative;
+  top: 50px;
+  left: 24%;
 }
 
 /* properties for the create an account title */
 #createname
 {
-  position:absolute;
-  top: 26%;
-  left: 50%;
+  position:relative;
+  top: 11px;
+  left: 51%;
 }
 
 /* properties for the login fieldset */
 #login
 {
-  position: absolute;
-  left: 25%;
-  top: 35%;
-  width : 320px;
+  position: relative;
+  left: 23%;
+  top: 15px;
+  width : 25%;
   height: 250px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #D3D3D3;
+  background-color: #F0FFF0;
 }
 
 /* properties for the create fieldset */
 #create
 {
-  position: absolute;
+  position: relative;
   left: 50%;
-  top: 35%;
-  width : 320px;
+  top: -254.8px;
+  width : 25%;
   height: 250px;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-color: #D3D3D3;
+  background-color: #F0FFF0;
 }
 
 
@@ -90,3 +95,33 @@
   margin-bottom: 5px;
 }
 
+#input label.error, #input2 label.error
+{
+  color : #f00;
+  font-size : .8em;
+  font-weight : bold;
+  display : block;  /* Display's errors under fields */
+}
+
+/* border for the text boxes during an error */
+#input input.error, #input select.error, #input2 input.error, #input2 select.error
+{
+  border : 2px solid red;
+}
+
+#errorContainer {
+    position:relative;
+    top: 20px;
+    left: 40%;
+    width: 24%;
+    display: none;
+    overflow: auto;
+    background-color: #FFDDDD;
+    border: 1px solid #FF2323;
+    padding-top: 0;
+}
+ 
+#errorContainer label {
+    float: none;
+    width: auto;
+}

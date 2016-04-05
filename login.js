@@ -21,10 +21,13 @@
             username: {
               required: "Please enter a username"
             },
-            maxCols: {
+            password: {
               required: "Please enter a password"
             }
-          }
+         },
+         errorContainer: $('#errorContainer'),
+         errorLabelContainer: $('#errorContainer ul'),
+         wrapper: 'li'
       }); // end validate for login form
 
       //validation for the create an account form
@@ -37,6 +40,7 @@
             },
             email: {
               required: true,
+              email: true,
               minlength:4
             },
             Username: {
@@ -50,7 +54,8 @@
           messages: {
             fullname: {
               required: "Please enter your name",
-              minlength: "name must be longer than 2 letters"
+              minlength: "Name must be longer than 2 letters",
+              lettersonly: "Name must only contain letters"
             },
             email: {
               required: "Please enter an email",
@@ -62,7 +67,10 @@
             Password: {
               required: "Please enter a password"
             }
-          }
+        },
+        errorContainer: $('#errorContainer'),
+        errorLabelContainer: $('#errorContainer ul'),
+        wrapper: 'li'
       }); // end validate for create form 
 
 }); 
