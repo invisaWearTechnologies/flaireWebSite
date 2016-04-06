@@ -12,6 +12,11 @@
     <!-- The css link -->
     <link type="text/css" rel="stylesheet" href="css/cart.css" >
     <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen" >
+
+    <!-- The jquery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="simpleCart.js"></script>
+
   </head>
 
   <body>
@@ -31,44 +36,14 @@
   		<hr>
      </div>
 
-     <!--Table to Display Price, Item and Quantity of Products in Cart-->
-     <table id="cart">
-		<thead>
-	      <tr>
-		    <th>Item</th>
-		    <th>Price</th>
-		    <th>Quantity</th>
-		  </tr>
-		</thead>
-		<tbody>
-	           <tr>
-	              <td>Rose Oval Locket 
-	                  <p></p>
-	                  <image src="images/Rose_Oval_Locket.jpg" alt="Rose Oval Locket" 
-	              </td>
-	              <td>
-	                  $xx.xx
-	              <td>
-	                  <input type="number" name="quantity" min="1" max="99" value="1">
-	              </td>
-	            </tr>
-	            <tr>
-	              <td>Blue Pendant 
-	                  <p></p>
-	                  <image src="images/Light Gold Pendant.jpg" alt="Blue Pendant" width="300" height="300">
-	              </td>
-	              <td>
-	                  $xx.xx 
-	              <td>
-	                  <input type="number" name="quantity" min="1" max="99" value="1">
-	              </td>
-	            </tr>
-		</tbody>
-	</table>
+<!-- show the cart -->
+<div class="simpleCart_items"></div>
 
-    <!--Proceed to Checkout Button-->
-   	<form id="input" name="input" action="cart.html" method="GET" >
-      <input type="submit" value="Proceed to Checkout" id="checkout">
-  	</form>
+<!-- create a checkout button -->
+<!-- <a href="javascript:;" class="simpleCart_checkout">Checkout</a>-->
+
+<!-- cart total (ex. $23.11)-->
+<!--<div class="simpleCart_total"></div>-->
+
   </body>
 </html>
