@@ -17,8 +17,9 @@ html {
 /*Styles for hr */
 hr {
 	display: block;
-    border: 2px solid #000000;
+    color: Black;
 }
+
 
 /* Styles for the header of the page (the div containing the navigation bar) */
 .header {
@@ -126,7 +127,8 @@ hr {
 }
 
 #slide-0 {
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
+	border-bottom: 2px solid Black;
 }	
 
 .navi .btn-default {
@@ -248,6 +250,8 @@ hr {
 #slide-2 .hsContent {
 	top: 1%;
 	text-align: center;
+	border-top: 2px solid Black;
+	border-bottom: 2px solid Black;
 }
 	#slide-2 p {
 		margin-top: 2%;
