@@ -1,3 +1,10 @@
+#formcontainer
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
 fieldset
 {
   box-shadow: 10px 10px 5px #888888;
@@ -6,27 +13,27 @@ fieldset
 /* properties for the login title */
 #loginname
 {
-  position:relative;
-  top: 50px;
-  left: 24%;
+  position:absolute;
+  top: 8%;
+  left: 26%;
 }
 
 /* properties for the create an account title */
 #createname
 {
-  position:relative;
-  top: 11px;
+  position:absolute;
+  top: 8%;
   left: 51%;
 }
 
 /* properties for the login fieldset */
 #login
 {
-  position: relative;
-  left: 23%;
-  top: 15px;
+  position: absolute;
+  left: 25%;
+  top: 20%;
   width : 25%;
-  height: 250px;
+  height: 50%;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
@@ -36,11 +43,11 @@ fieldset
 /* properties for the create fieldset */
 #create
 {
-  position: relative;
+  position: absolute;
   left: 50%;
-  top: -254.8px;
+  top: 20%;
   width : 25%;
-  height: 250px;
+  height: 50%;
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
@@ -62,15 +69,21 @@ fieldset
 }
 
 /* margin for specific input box */
+#fullname, #username
+{
+  margin-top: 6%;
+}
+
+/* margin for specific input box */
 #fullname, #Username
 {
-  margin-left: 39px;rm
+  margin-left: 37px;
 }
 
 /* margin for the #Password input box in the create fieldset */
 #Password
 {
-  margin-left: 40px;
+  margin-left: 38px;
 }
 
 /* margin for the form tables */
@@ -82,7 +95,7 @@ fieldset
 /* properties for the login submit button */
 #loginbutton
 {
-  margin-left: 69%;
+  margin-left: 62%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
@@ -90,7 +103,7 @@ fieldset
 /* properties for the create submit button */
 #createaccount
 {
-  margin-left: 61%;
+  margin-left: 52%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
@@ -112,7 +125,7 @@ fieldset
 #errorContainer {
     position:relative;
     top: 20px;
-    left: 40%;
+    left: 38%;
     width: 24%;
     display: none;
     overflow: auto;
