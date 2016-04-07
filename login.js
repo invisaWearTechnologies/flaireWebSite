@@ -36,7 +36,6 @@
             fullname: {
               required: true,
               minlength:2,
-              lettersonly:true
             },
             email: {
               required: true,
@@ -55,7 +54,6 @@
             fullname: {
               required: "Please enter your name",
               minlength: "Name must be longer than 2 letters",
-              lettersonly: "Name must only contain letters"
             },
             email: {
               required: "Please enter an email",
