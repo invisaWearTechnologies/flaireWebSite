@@ -2,6 +2,14 @@
  * Author: Alex Chen
  */
 
+/*format when shopping cart is empty header */
+#empty
+{
+  position:absolute;
+  left:20%;
+  top: 40%;
+}
+
 /*changes the properties for the table which holds the items in the shopping cart */
 table 
 {
@@ -23,42 +31,42 @@ th
 td
 {
   vertical-align:middle;
-  height: 175px;
+  height: 170px;
   border-bottom: 2px solid;
   padding: 0 20px 15px 20px;
 }
 
-td:nth-child(1)
+th:nth-child(1)
 {
     width: 170px;
 }
 
-td:nth-child(3) 
+th:nth-child(3) 
 {
     width: 75px;
 }
 
-td:nth-child(2) 
+th:nth-child(2) 
 {
     width: 200px;
 }
 
-td:nth-child(4)
+th:nth-child(4)
 {
     width: 20px;
 }
 
-td:nth-child(5)
+th:nth-child(5)
 {
     width: 20px;
 }
 
-td:nth-child(6)
+th:nth-child(6)
 {
     width: 50px;
 }
 
-td:nth-child(7)
+th:nth-child(7)
 {
     width: 80px;
 }
@@ -77,7 +85,6 @@ img
   height: 150px;
   width: 150px;
 }
-
 
 #checkoutContainer
 {
@@ -121,11 +128,5 @@ img
   color:black;
 }
 
-.item_Quantity
-{
-  width: 35px;
-  text-align: center;
-  margin-bottom: 5px;
-}
 
 

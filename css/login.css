@@ -138,3 +138,16 @@ fieldset
     float: none;
     width: auto;
 }
+
+/*modifies the form for the quantity of products in shop.html */
+.item_Quantity
+{
+  width: 35px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.item_name
+{
+  display:none;
+}
