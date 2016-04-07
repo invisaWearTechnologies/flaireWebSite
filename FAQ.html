@@ -16,25 +16,52 @@
  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
  
  	<!--Style Sheets--> 
- 	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen"> 
+ 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<!--Style Sheets-->
+	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
+	<link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+	<link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+	<script src="simpleCart.js"></script>
  </head> 
  
  <body> 
  	<!--Page Header Containing Navigation Bar-->
-     <div class='header'> 
-     	<!-- creates a div within the header that contains just the navbar-->
-        <div class="navi">
-  			<ul>
-  				<li class="flaireicon"><a>FLAIRE</a></li>
-      			<li><a href='index.html'>HOME</a></li>
-      			<li><a href='about.html'>ABOUT</a></li>
-      			<li><a href='shop.html'>SHOP</a></li>
-      			<li><a href='login.html'>CREATE ACCOUNT/LOGIN</a></li>
-      			<li><a href='cart.html'>CART</a></li>
-  			</ul>
-  		</div>
-  		<hr>
-     </div> 
+    <section id="slide-0" class="homeSlideZero">
+        <div class="bcg">
+            <div class="hsContainer">
+                <!--<h1>Flaire</h1>-->
+                <div class="navi">
+                    <ul>
+                        <li class="flaireicon" style="font-family: Quicksand"><a>FLAIRE</a></li>
+                        <li><a href="index.html"> <button class="btn btn-default " aria-haspopup="true" aria-expanded="true" type="button"> HOME </button></a></li>
+                        <li class="dropdown"> 
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                                ABOUT 
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="FAQ.html">FAQ</a></li>
+                                <li><a href="about_developers.html">About the Developers</a></li>
+                                <li><a href="set_up_device.html">Setup Device</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='shop.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">SHOP</button></a></li>
+                        <li><a href='login.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
+                            </button></a>
+                        </li>
+                        <li><a href='cart.html' class="glyphicon glyphicon-shopping-cart btn btn-default" aria-hidden="true">(<span class="simpleCart_quantity">
+                        </span>)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 	
  	 <!--Image of Jewlery-->
     <div>
