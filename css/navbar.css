@@ -441,6 +441,14 @@ hr {
 	margin-right:75px;
 	font-family: "Times New Roman", Times, serif;
 }
+
+.componentsTag {
+	margin-top: 125px;
+	float: left;
+}
+.componentsCarousel {
+	float: right;
+}
 /* --------------------------- Styles for the About the Developers Page -------------------*/
 .dev_title{
 	font-family: 'Playfair Display', serif;

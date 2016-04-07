@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-#amazingcarousel-3 .amazingcarousel-image {	
+#amazingcarousel-4 .amazingcarousel-image {	
 	position: relative;
 	padding: 4px;
 	background-color: #fff;
@@ -11,7 +11,7 @@
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-#amazingcarousel-3 .amazingcarousel-image img {
+#amazingcarousel-4 .amazingcarousel-image img {
 	display: block;
 	width: 100%;
 	max-width: 100%;
@@ -23,7 +23,7 @@
 	border-radius: 0px;
 }
 
-#amazingcarousel-3 .amazingcarousel-title {
+#amazingcarousel-4 .amazingcarousel-title {
 	position:relative;
 	font: bold 12px 'Open Sans', sans-serif;
 	color:#333333;
@@ -33,7 +33,7 @@
 	overflow: hidden;
 }
 
-#amazingcarousel-3 .amazingcarousel-description {
+#amazingcarousel-4 .amazingcarousel-description {
 	position:relative;
 	font: 12px 'Open Sans', sans-serif;
 	color:#333333;
@@ -45,31 +45,31 @@
 
 /* carousel */
 
-#amazingcarousel-container-3 {
+#amazingcarousel-container-4 {
 	padding: 32px 60px; 
 }
 
-#amazingcarousel-3 .amazingcarousel-list-container { 
+#amazingcarousel-4 .amazingcarousel-list-container { 
 	padding: 8px 0;
 }
 
 /* item */
 
-#amazingcarousel-3 .amazingcarousel-item-container {
+#amazingcarousel-4 .amazingcarousel-item-container {
 	text-align: center;
 	padding: 4px;
 }
 
 /* arrows */
 
-#amazingcarousel-3 .amazingcarousel-prev {
+#amazingcarousel-4 .amazingcarousel-prev {
 	left: 0%;
 	top: 50%;
 	margin-left: -60px;
 	margin-top: -24px;
 }
 
-#amazingcarousel-3 .amazingcarousel-next {
+#amazingcarousel-4 .amazingcarousel-next {
 	right: 0%;
 	top: 50%;
 	margin-right: -60px;
@@ -78,13 +78,13 @@
 
 /* navigation bullets */
 
-#amazingcarousel-3 .amazingcarousel-nav {
+#amazingcarousel-4 .amazingcarousel-nav {
 	position: absolute;
 	width: 100%;
 	top: 100%;
 }
 
-#amazingcarousel-3 .amazingcarousel-bullet-wrapper {
+#amazingcarousel-4 .amazingcarousel-bullet-wrapper {
 	margin: 4px auto;
 }
 
