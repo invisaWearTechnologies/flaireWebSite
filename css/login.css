@@ -37,7 +37,7 @@ fieldset
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-image: url("../background.png");
+  background-image: url("../images/background-login.png");
 }
 
 /* properties for the create fieldset */
@@ -51,7 +51,7 @@ fieldset
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-image: url("../background.png");
+  background-image: url("../images/background-login.png");
 }
 
 
