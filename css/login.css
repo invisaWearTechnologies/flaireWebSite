@@ -37,7 +37,7 @@ fieldset
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #F0FFF0;
+  background-image: url("../background.png");
 }
 
 /* properties for the create fieldset */
@@ -51,7 +51,7 @@ fieldset
   border : 2px solid black;
   font-family : Helvetica;
   font-weight : bold;  
-  background-color: #F0FFF0;
+  background-image: url("../background.png");
 }
 
 
@@ -144,10 +144,19 @@ fieldset
 {
   width: 35px;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 10px 0 10px 0;
 }
 
 .item_name
 {
   display:none;
 }
+
+#addItem
+{
+  border: 1px solid black;
+  font-family: sandpaper;
+  font-size: 16px;
+}
+
+
