@@ -468,38 +468,7 @@ hr {
 }  
 
 /* --------------------------- Styles for the FAQ Page ------------------------------------*/
-/*.container {
-    width:100%;
-    
-}
-.container div {
-    width:100%;
-}
-.container .header {
 
-    border-bottom: 1px solid #000;
-    border-top:1px solid #000;
-    padding: 2px;
-    cursor: pointer;
-	display: table-cell;
-    font-size: 20px;
-    font-weight: normal;
-    font-family: "MarkWeb-ExtraLight","Helvetica Neue",Helvetica,Calibri,Arial,Sans-Serif;
-    line-height: 26px;
-    letter-spacing: 5px;
-    position: relative;
-    vertical-align: middle;
-	
-}
-.container .header .arrow{
-	width: 2.5%;
-  height: 45%;
-  float: right;
-}
-.container .content {
-    display: none;
-    padding : 5px;
-}*/
 .about-image-content{
   display: block;
   margin-left: auto;
@@ -576,9 +545,16 @@ hr {
     display: block;
 }
 /* --------------------------- Styles for the About the Developers Page -------------------*/
+.about-image-content{
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;	
+  height: 50%;
+}
 .dev_title{
 	font-family: 'Playfair Display', serif;
-	width: 100%
+	width: 100%;
 	height:100%
 }
 .dev_title h1{
@@ -586,30 +562,28 @@ hr {
 	text-align: center;
 }
 .madhu{
-	border: 5px solid black;
 	float: left;
 	width: 40%;
 	height: 30%
 }
+
 .madhu h2{
-	color:  #736F6E;
+	color: #808080;
 	font-weight: bold;
 }
-.madhu p{
-	font-family: "Times New Roman", Times, serif;
-	margin-left: 30px;
-}
+
 .madhu_pic{
-	float: right;
-	width: 20%;
-    height: 70%;
-	margin:10px
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
 .rajia{
-	border: 5px solid black;
-	float: right;
+	
+	position:absolute;
 	width: 40%;
-	height:40%
+	height:40%;
+	margin-left: 45%
 	
 }
 .rajia h2{
@@ -617,62 +591,99 @@ hr {
 	font-weight: bold;
 }
 .rajia_pic{
-	float: right;
-	width: 20%;
-    height: 70%;
-	margin:10px	
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
 .rajia p{
 	font-family: "Times New Roman", Times, serif;
 	margin-left: 30px;
 }
 .alex{
-	border: 5px solid black;
-	float: left;
 	clear: left;
 	width: 40%;
-	height: 30%
+	height: 30%;
+	position:absolute;
+	margin-left:90%
 }
 .alex_pic{
-	float: right;
-	width: 20%;
-    height: 70%;
-	margin:10px	
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
 }
 .alex h2{
 	color: #736F6E;
 	font-weight: bold;
 }
-.alex p{
-	font-family: "Times New Roman", Times, serif;
-	margin-left: 30px;
-}
+
 .jeremy{
-	border: 5px solid black;
-	float: right;
+	position:absolute;
+	float: left;
 	clear: right;
 	width: 40%;
-	height: 40%
+	height: 40%;
+	margin-top: 20%
 }
 .jeremy_pic{
-	float: right;
-	width: 15%;
-    height: 60%;
-	margin:10px	
+
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
 }
 .jeremy h2{
 	font-family: 'Playfair Display', serif;	
 	color: #736F6E;
 	font-weight: bold;
 }
-.jeremy p{
-	margin-left: 30px;
-	font-family: "Times New Roman", Times, serif;
+.erin{
+	position:absolute;
+	float: left;
+	clear: right;
+	width: 40%;
+	height: 40%;
+	margin-top: 20%;
+	margin-left: 45%
+}
+.erin_pic{
+
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
+}
+.erin h2{
+	font-family: 'Playfair Display', serif;	
+	color: #736F6E;
+	font-weight: bold;
+}
+.ray{
+	position:absolute;
+	float: left;
+	clear: right;
+	width: 40%;
+	height: 40%;
+	margin-top: 20%;
+	margin-left: 90%
+}
+.ray_pic{
+
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
+}
+.ray h2{
+	font-family: 'Playfair Display', serif;	
+	color: #736F6E;
+	font-weight: bold;
 }
 
 /* ------------------------------Styles for the Set-Up Device Page ------------*/
 .device_setup{
-	border: 10px solid black;	
+	border: 5px solid black;	
 	width: 50%;
 	height: 50%;
 	float: right;
@@ -691,7 +702,7 @@ hr {
 
 .device_setup li{
 	font-size: 130%;
-	list-style-type:decimal-leading-zero;
+	list-style-type:decimal;
 	margin-left: 30px;
 	margin-bottom: 30px;
 }
