@@ -564,7 +564,8 @@ hr {
 .madhu{
 	float: left;
 	width: 40%;
-	height: 30%
+	height: 30%;
+	padding-left: 3%
 }
 
 .madhu h2{
@@ -624,7 +625,8 @@ hr {
 	clear: right;
 	width: 40%;
 	height: 40%;
-	margin-top: 20%
+	margin-top: 20%;
+	padding-left: 3%
 }
 .jeremy_pic{
 
