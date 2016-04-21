@@ -399,7 +399,7 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 250px;
   width: 90%;	
   height: 300px;
 }
@@ -609,7 +609,7 @@ hr {
 .dev_title{
 	font-family: 'Playfair Display', serif;
 	width: 100%;
-	height:100%
+	height:100%;
 }
 .dev_title h1{
 	color:black;
@@ -619,7 +619,7 @@ hr {
 	float: left;
 	width: 40%;
 	height: 30%;
-	padding-left: 3%
+	padding-left: 15%;
 }
 
 .madhu h2{
@@ -657,10 +657,10 @@ hr {
 }
 .alex{
 	clear: left;
-	width: 40%;
+	width: 20%;
 	height: 30%;
 	position:absolute;
-	margin-left:90%
+	margin-left:80%
 }
 .alex_pic{
 	width:150px;
@@ -679,8 +679,8 @@ hr {
 	clear: right;
 	width: 40%;
 	height: 40%;
-	margin-top: 20%;
-	padding-left: 3%
+	margin-top: 25%;
+    margin-left: 15%;
 }
 .jeremy_pic{
 
@@ -700,7 +700,7 @@ hr {
 	clear: right;
 	width: 40%;
 	height: 40%;
-	margin-top: 20%;
+	margin-top: 25%;
 	margin-left: 45%
 }
 .erin_pic{
@@ -719,10 +719,10 @@ hr {
 	position:absolute;
 	float: left;
 	clear: right;
-	width: 40%;
+    width: 20%;
 	height: 40%;
-	margin-top: 20%;
-	margin-left: 90%
+	margin-top: 25%;
+	margin-left: 80%
 }
 .ray_pic{
 
