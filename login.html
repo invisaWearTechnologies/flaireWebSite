@@ -71,53 +71,50 @@
     </div>
   </section>
 
-  <hr>
-
-
     <div id="errorContainer">
       <p>Please correct the following errors and try again:</p>
       <ul />
     </div>
 
-   <h3 id="loginname"> Login</h3> <h3 id="createname"> Create invisaWear Account </h3>
+       
+     <div id="formcontainer">
+                     
+       <h3 id="loginname"> Login</h3> 
+       <h3 id="createname"> Create invisaWear Account </h3>
 
-    <!-- Login Fieldset -->
-    <fieldset id="login">
-      <form id="input" name="input" action="index.html" method="GET" >
-        <p>
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Username">
-        </p>
-        <p>
-          <label for="password">Password</label> 
-          <input type="text" id="password" name="password" placeholder="Password">
-        </p>
-        <input type="submit" value="Login" id="loginbutton">
-      </form>
-    </fieldset>
+      <!-- Login Fieldset -->
+       <fieldset class="form-group" id="login">
+        <form id="input" name="input" action="index.html" method="GET" >
+         <label for="username">Username</label>
+         <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+         <br>
 
-	<!-- Create Account Fieldset -->
-    <fieldset id="create">
-      <form id="input2" name="input" action="register.html" method="GET" >
-        <p>
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
-        </p>
-        <p>
-          <label for="email">Email Address</label> 
-          <input type="text" id="email" name="email" placeholder="Email Address">
-        </p>
-        <p>
+         <label for="Password">Password</label>
+         <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
+
+         <br>
+         <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+       </fieldset>
+
+      <!-- Create Account Fieldset -->
+      <fieldset class="form-group"id="create">
+        <form id="input2" name="input" action="register.html" method="GET" >
+          <label for="full-name">Full Name</label>
+          <input type="text" class="form-control" id="full-name" name="fullname" placeholder="Full Name">
+          <br>
+          <label for="email-input">Email address</label>
+          <input type="email" class="form-control" id="email-input" name="email" placeholder="Email Address">
+           <br>
           <label for="Username">Username</label>
-          <input type="text" id="Username" name="Username" placeholder="Username">
-        </p>
-        <p>
-          <label for="Password">Password</label> 
-          <input type="text" id="Password" name="Password" placeholder="Password">
-        </p>
-        <input type="submit" value="Create Account" id="createaccount">
-      </form>
-    </fieldset>
-
+          <input type="text" class="form-control" id="Username" name="Username" placeholder="Username">
+          <br>
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+          <br>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </fieldset>
+     </div>
   </body>
 </html>

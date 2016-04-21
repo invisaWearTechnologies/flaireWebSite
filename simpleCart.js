@@ -208,6 +208,7 @@
 
 					// return a reference to the added item
 					return newItem;
+
 				},
 
 
@@ -1262,15 +1263,21 @@
 			// base simpleCart events in options
 			baseEvents = {
 				  beforeAdd				: null
-				, afterAdd				: null
+				, afterAdd				:  
+       				 simpleCart.bind( 'afterAdd' , function( item ){ if (confirm( item.get("name") + " has been added to the cart! \n\nClick OK to view your shopping cart or \nCancel to continue shopping"))
+                                     document.location.href = "cart.html"; })
+
 				, load					: null
 				, beforeSave			: null
 				, afterSave				: null
 				, update				: null
 				, ready					: null
-				, checkoutSuccess		: null
+				, checkoutSuccess		: 
+                                simpleCart.bind( 'checkoutSuccess', function(item){simplecart.empty();})
 				, checkoutFail			: null
-				, beforeCheckout		: null
+				, beforeCheckout		:  
+				simpleCart.bind( 'beforeCheckout' , function( item ){ if(!confirm('Are you sure you want to proceed to checkout?'))
+	                            e.preventDefault(); })
 				, beforeRemove			: null
 			};
 			

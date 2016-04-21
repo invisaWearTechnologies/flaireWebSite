@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
     var jsFolder = "";
     for (var i= 0; i< scripts.length; i++)
     {
-        if( scripts[i].src && scripts[i].src.match(/initcarousel-2\.js/i))
+        if( scripts[i].src && scripts[i].src.match(/initcarousel-4\.js/i))
             jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
     }
     if ( typeof html5Lightbox === "undefined" )
@@ -23,12 +23,11 @@ jQuery(document).ready(function(){
             descriptionbottomcss:'{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}'
         });
     }
-    jQuery("#amazingcarousel-2").amazingcarousel({
+    jQuery("#amazingcarousel-4").amazingcarousel({
         jsfolder:jsFolder,
         width:240,
         height:180,
         skinsfoldername:"",
-        visibleitems:3,
         interval:3000,
         itembottomshadowimagetop:99,
         donotcrop:false,
@@ -97,7 +96,7 @@ jQuery(document).ready(function(){
         imagefillcolor:"FFFFFF",
         playvideoimage:"playvideo-64-64-0.png",
         transitionduration:1000,
-        previewmode:false,
+        visibleitems:3,
         imagewidth:240,
         usescreenquery:false,
         bottomshadowimagewidth:110,
