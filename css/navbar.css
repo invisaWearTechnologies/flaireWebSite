@@ -250,22 +250,25 @@ hr {
 
 /*Slide 2: Contact Info Bar */
 #slide-2 .hsContent {
-	top: 1%;
 	text-align: center;
 	border-top: 2px solid Black;
 	border-bottom: 2px solid Black;
 }
 	#slide-2 p {
-		margin-top: 2%;
+		margin-top: .7%;
+		margin-bottom: -1%;
 		color: Black;
 		font-family: Georgia;
 		font-size: 17px;
 		text-align: center;
 	}
 
+
 /*Slide 3: Picture of Flaire */
+#slide-3 {
+	height: 25%;
+}
 #slide-3 img {
-	height: 50%;
 	width: 100%;
     
 	margin-top: -2.9%;
