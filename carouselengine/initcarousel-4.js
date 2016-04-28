@@ -28,7 +28,7 @@ jQuery(document).ready(function(){
         width:240,
         height:180,
         skinsfoldername:"",
-        interval:3000,
+        interval:25000,
         itembottomshadowimagetop:99,
         donotcrop:false,
         random:false,

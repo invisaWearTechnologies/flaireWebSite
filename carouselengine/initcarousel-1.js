@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
         height:180,
         skinsfoldername:"",
         visibleitems:3,
-        interval:3000,
+        interval:25000,
         itembottomshadowimagetop:99,
         donotcrop:false,
         random:false,
