@@ -1,9 +1,9 @@
 <!--Author:         Rajia M. Abdelaziz, UMass Lowell Undergraduate
 	Created:        February 26, 2016
-	Last Updated:   February 26, 2016 at 6:11 p.m 
+	Last Updated:   April 28, 2016 at 11:11 a.m 
 -->
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
@@ -20,40 +20,30 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <!--Style Sheets-->
     <link type="text/css" rel="stylesheet" href="css/login.css" >
     <link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
     <link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
     <link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
 
-    <script src="js/jquery-2.2.2.min.js"></script>
+    <!--jQuery and JavaScript Files-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="simpleCart.js"></script>
+	<script src="js/jquery-2.2.2.min.js"></script>
     <script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 
-        <!--JQuery and Javascript Files-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="simpleCart.js"></script>
-
-
-	<!--Carousel 1-->
-	<!-- Insert to your webpage before the </head> -->
-    <script src="carouselengine/jquery.js"></script>
+    <!-- Stylesheets and jQuery Files for Amazing Carousel Plugin-->
+	<script src="carouselengine/jquery.js"></script>
     <script src="carouselengine/amazingcarousel.js"></script>
     <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-1.css">
     <script src="carouselengine/initcarousel-1.js"></script>
-    <!-- End of head section HTML codes -->
-
-    <!-- Carousel 2-->
     <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-2.css">
     <script src="carouselengine/initcarousel-2.js"></script>
-
-    <!-- Carousel 3 -->
     <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-3.css">
     <script src="carouselengine/initcarousel-3.js"></script>
 </head>
+
 <body>
-
-	<!--Page Header Containing Navigation Bar-->
-
+	<!--Navigation Bar-->
     <section id="slide-0" class="homeSlideZero">
         <div class="bcg">
             <div class="hsContainer">
@@ -65,7 +55,7 @@
                         <li class="dropdown"> 
                             <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
                                 ABOUT 
-                                <span class="caret"></span>
+                               	<span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li><a href="FAQ.html">FAQ</a></li>
@@ -85,7 +75,8 @@
         </div>
     </section>
 
-    <!--Pictures of Components-->
+    <!--Amazing Carousel Slider for Components-->
+    <!--This slider contains 6 components, their images, description, price and buttons to add to cart-->
     <h2 class="componentsTag">Components</h2>  
 	<div id="amazingcarousel-container-1">
     <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
@@ -93,64 +84,64 @@
             <ul class="amazingcarousel-list">
                 <li class="amazingcarousel-item">
                     <div class="amazingcarousel-item-container simpleCart_shelfItem">
-			<div class="amazingcarousel-image"><a href="images/c1-lightbox.jpg" title="Crystal Heart Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/c1.jpg" class="item_thumb"  alt="$50 Crystal Heart Flaire" /></a></div>
-			<div class="amazingcarousel-title item_name">Crystal Heart Flaire</div>
-			<div class="amazingcarousel-description"></div>    
-  			<span class="item_price">$50.00</span><br>
-		        <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  title: "Crystal"onclick="this.blur();" type="button">Add to Cart</button> </a>
+						<div class="amazingcarousel-image"><a href="images/c1-lightbox.jpg" title="Crystal Heart Flaire"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/c1.jpg" class="item_thumb"  alt="$50 Crystal Heart Flaire" /></a></div>
+						<div class="amazingcarousel-title item_name">Crystal Heart Flaire</div>
+						<div class="amazingcarousel-description"></div>    
+			  			<span class="item_price">$50.00</span><br>
+					        <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  title: "Crystal"onclick="this.blur();" type="button">Add to Cart</bu</a>
             	   </div>
                 </li>
-	        <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/c2-lightbox.jpg" title="Silver Ring Necklace" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/c2.jpg"  class="item_thumb"  /> </a></div>
-	<div class="amazingcarousel-title item_name">Silver Ring Necklace</div>
-	<div class="amazingcarousel-description"></div> 
-			<span class="item_price">$50.00</span><br> 
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                  </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/Diamond Accent Oval Locket-lightbox.jpg" title="Diamond Accent Oval" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Diamond Accent Oval Locket.jpg"  class="item_thumb"  /></a></div>
-	<div class="amazingcarousel-title item_name">Diamond Accent Oval Locket</div>
-	<div class="amazingcarousel-description"></div>   
-			 <span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br> 
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/Light Blue Locket-lightbox.jpg" title="Light Blue Locket" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Light Blue Locket.jpg"  class="item_thumb"  /></a></div>
-	<div class="amazingcarousel-title item_name">Light Blue Locket</div>
-	<div class="amazingcarousel-description"></div> 
- 			<span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+	        	<li class="amazingcarousel-item">
+	                <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/c2-lightbox.jpg" title="Silver Ring Necklace" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/c2.jpg"  class="item_thumb"  /> </a></div>
+						<div class="amazingcarousel-title item_name">Silver Ring Necklace</div>
+						<div class="amazingcarousel-description"></div> 
+						<span class="item_price">$50.00</span><br> 
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a>p>
+                  	</div>
+	            </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/Diamond Accent Oval Locket-lightbox.jpg" title="Diamond Accent Oval" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Diamond Accent Oval Locket.jpg"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Diamond Accent Oval Locket</div>
+						<div class="amazingcarousel-description"></div>   
+						<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br> 
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+					</div>
+	            </li>
+	            <li class="amazingcarousel-item">
+	                <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/Light Blue Locket-lightbox.jpg" title="Light Blue Locket" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Light Blue Locket.jpg"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Light Blue Locket</div>
+						<div class="amazingcarousel-description"></div> 
+			 			<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+                    </div>
+	            </li>
+	            <li class="amazingcarousel-item">
+	                <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/Rose_Oval_Locket-lightbox.jpg" title="Rose Oval Locket" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Rose_Oval_Locket.jpg"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Rose_Oval_Locket</div>
+						<div class="amazingcarousel-description"></div> 
+			 			<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
                    </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/Rose_Oval_Locket-lightbox.jpg" title="Rose Oval Locket" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Rose_Oval_Locket.jpg"  class="item_thumb"  /></a></div>
-	<div class="amazingcarousel-title item_name">Rose_Oval_Locket</div>
-	<div class="amazingcarousel-description"></div> 
- 			<span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+	            </li>
+	            <li class="amazingcarousel-item">
+	                <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/Light Gold Pendant-lightbox.jpg" title="Light Gold Pendant" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Light Gold Pendant.jpg"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Light Gold Pendant</div>
+						<div class="amazingcarousel-description"></div> 
+					 	<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
                    </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/Light Gold Pendant-lightbox.jpg" title="Light Gold Pendant" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="720" ><img src="images/Light Gold Pendant.jpg"  class="item_thumb"  /></a></div>
-	<div class="amazingcarousel-title item_name">Light Gold Pendant</div>
-	<div class="amazingcarousel-description"></div> 
- 			<span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                   </div>
-	                </li>
+	            </li>
 	            </ul>
 	            <div class="amazingcarousel-prev"></div>
 	            <div class="amazingcarousel-next"></div>
@@ -159,10 +150,10 @@
 	        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Image Scroller</a></div>
 	    </div>
 	</div>
-	<!--Begin Code for the Components Carousel -->
     
-	<!--Pictures of Watches-->
-	
+
+    <!--Amazing Carousel Slider for Watches-->
+    <!--This slider contains 6 watches, their images, description, price and buttons to add to cart-->	
 	<h2 class="componentsTag">Watches</h2>  
 	<div id="amazingcarousel-container-2">
     <div id="amazingcarousel-2" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
@@ -170,75 +161,76 @@
             <ul class="amazingcarousel-list">
                 <li class="amazingcarousel-item">
                     <div class="amazingcarousel-item-container simpleCart_shelfItem">
-		<div class="amazingcarousel-image"><a href="images/w-lightbox.png" title="Watch 1" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w.png"  class="item_thumb"   /></a></div>
-		<div class="amazingcarousel-title item_name">Watch 1</div>
-		<div class="amazingcarousel-description"></div> 
- 			<span class="item_price">$50.00</span><br>  
-			<p>  <input type="text" value="1" class="item_Quantity"><br> 
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                </div>
-		                </li>
-		                <li class="amazingcarousel-item">
-		                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-		<div class="amazingcarousel-image"><a href="images/w2-lightbox.png" title="Watch 2" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w2.png"  class="item_thumb"  /></a></div>
-		<div class="amazingcarousel-title item_name">Watch 2 </div>
-		<div class="amazingcarousel-description"></div> 
- 			<span class="item_price">$50.00</span><br> 
-			<p>  <input type="text" value="1" class="item_Quantity"><br>    
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-              </div>
-		                </li>
-		                <li class="amazingcarousel-item">
-		                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-		<div class="amazingcarousel-image"><a href="images/w3-lightbox.png" title="Watch 3" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w3.png"  class="item_thumb"  /></a></div>
-		<div class="amazingcarousel-title item_name">Watch 3</div>
-		<div class="amazingcarousel-description"></div>  
- 			<span class="item_price">$50.00</span><br> 
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                 </div>
-		                </li>
-		                <li class="amazingcarousel-item">
-		                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-		<div class="amazingcarousel-image"><a href="images/w4-lightbox.png" title="Watch 4" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w4.png"  class="item_thumb"  /></a></div>
-		<div class="amazingcarousel-title item_name">Watch 4</div>
-		<div class="amazingcarousel-description"></div> 
- 			<span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br>  
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                 </div>
-		                </li>
-		                <li class="amazingcarousel-item">
-		                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-		<div class="amazingcarousel-image"><a href="images/w5-lightbox.png" title="Watch 5" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w5.png"  class="item_thumb"  /></a></div>
-		<div class="amazingcarousel-title item_name">Watch 5</div>
-		<div class="amazingcarousel-description"></div>  
-			<span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                  </div>
-		                </li>
-		                <li class="amazingcarousel-item">
-		                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-		<div class="amazingcarousel-image"><a href="images/w6-lightbox.png" title="Watch 6" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w6.png"  class="item_thumb"  /></a></div>
-		<div class="amazingcarousel-title item_name">Watch 6</div>
-		<div class="amazingcarousel-description"></div> 
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
- 			<span class="item_price">$50.00</span><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-                   </div>
-		                </li>
-		            </ul>
-		            <div class="amazingcarousel-prev"></div>
-		            <div class="amazingcarousel-next"></div>
-		        </div>
-		        <div class="amazingcarousel-nav"></div>
-		        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Carousel</a></div>
-		    </div>
+						<div class="amazingcarousel-image"><a href="images/w-lightbox.png" title="Watch 1" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w.png"  class="item_thumb"   /></a></div>
+						<div class="amazingcarousel-title item_name">Watch 1</div>
+						<div class="amazingcarousel-description"></div> 
+			 			<span class="item_price">$50.00</span><br>  
+						<p>  <input type="text" value="1" class="item_Quantity"><br> 
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+                	</div>
+		        </li>
+		        <li class="amazingcarousel-item">
+		            <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/w2-lightbox.png" title="Watch 2" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w2.png"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Watch 2 </div>
+						<div class="amazingcarousel-description"></div> 
+			 			<span class="item_price">$50.00</span><br> 
+						<p>  <input type="text" value="1" class="item_Quantity"><br>    
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+              		</div>
+		        </li>
+		        <li class="amazingcarousel-item">
+		            <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/w3-lightbox.png" title="Watch 3" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w3.png"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Watch 3</div>
+						<div class="amazingcarousel-description"></div>  
+			 			<span class="item_price">$50.00</span><br> 
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+                 	</div>
+                </li>
+                <li class="amazingcarousel-item">
+		            <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/w4-lightbox.png" title="Watch 4" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w4.png"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Watch 4</div>
+						<div class="amazingcarousel-description"></div> 
+			 			<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br>  
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+	                </div>
+		        </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/w5-lightbox.png" title="Watch 5" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w5.png"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Watch 5</div>
+						<div class="amazingcarousel-description"></div>  
+						<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a>p>
+          			</div>
+                </li>
+                <li class="amazingcarousel-item">
+		            <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/w6-lightbox.png" title="Watch 6" class="html5lightbox" data-group="amazingcarousel-2"><img src="images/w6.png"  class="item_thumb"  /></a></div>
+						<div class="amazingcarousel-title item_name">Watch 6</div>
+						<div class="amazingcarousel-description"></div> 
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			 			<span class="item_price">$50.00</span><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+                   	</div>
+		        </li>
+	        </ul>
+	        <div class="amazingcarousel-prev"></div>
+	        <div class="amazingcarousel-next"></div>
+	        </div>
+	        <div class="amazingcarousel-nav"></div>
+	        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Carousel</a></div>
 		</div>
+	</div>
 
 	
-	<!--Pictures of Bundles-->
+	<!--Amazing Carousel Slider for Bundles-->
+    <!--This slider contains 6 bundless, their images, description, price and buttons to add to cart-->
 	<h2 class="componentsTag">Bundles</h2>  
 	<div id="amazingcarousel-container-3">
     <div id="amazingcarousel-3" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
@@ -246,65 +238,61 @@
             <ul class="amazingcarousel-list">
                 <li class="amazingcarousel-item">
                     <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 1" class="html5lightbox" data-group="amazingcarousel-3" data-width="960" data-height="720" ><img src="images/m6.png" class="item_thumb"   /></a></div>
-	<div class="amazingcarousel-title item_name">Bundle 1</div>
-	<div class="amazingcarousel-description"></div>   
- 			<span class="item_price">$50.00</span><br>   
-			<p>  <input type="text" value="1" class="item_Quantity"><br>    
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-          </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 2" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
-	<div class="amazingcarousel-title item_name">Bundle 2</div>
-	<div class="amazingcarousel-description"></div> 
-			<span class="item_price">$50.00</span><br>
-			<p>  <input type="text" value="1" class="item_Quantity"><br>    
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-               </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 3" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
-	<div class="amazingcarousel-title item_name">Bundle 3</div>
-	<div class="amazingcarousel-description"></div>     
-			<span class="item_price">$50.00</span><br>  
-			<p>  <input type="text" value="1" class="item_Quantity"><br>      
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-       </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 4" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
-	<div class="amazingcarousel-title item_name">Bundle 4</div>
-	<div class="amazingcarousel-description"></div> 
-			<span class="item_price">$50.00</span><br> 
-			<p>  <input type="text" value="1" class="item_Quantity"><br>          
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+						<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 1" class="html5lightbox" data-group="amazingcarousel-3" data-width="960" data-height="720" ><img src="images/m6.png" class="item_thumb"   /></a></div>
+						<div class="amazingcarousel-title item_name">Bundle 1</div>
+						<div class="amazingcarousel-description"></div>   
+			 			<span class="item_price">$50.00</span><br>   
+						<p>  <input type="text" value="1" class="item_Quantity"><br>    
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+          			</div>
+	            </li>
+	            <li class="amazingcarousel-item">
+	                <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 2" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
+						<div class="amazingcarousel-title item_name">Bundle 2</div>
+						<div class="amazingcarousel-description"></div> 
+						<span class="item_price">$50.00</span><br>
+						<p>  <input type="text" value="1" class="item_Quantity"><br>    
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+               		</div>
+	            </li>
+	            <li class="amazingcarousel-item">
+	                <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 3" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
+						<div class="amazingcarousel-title item_name">Bundle 3</div>
+						<div class="amazingcarousel-description"></div>     
+						<span class="item_price">$50.00</span><br>  
+						<p>  <input type="text" value="1" class="item_Quantity"><br>      
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+       				</div>
+	            </li>
+	            <li class="amazingcarousel-item">
+	                 <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 4" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
+						<div class="amazingcarousel-title item_name">Bundle 4</div>
+						<div class="amazingcarousel-description"></div> 
+						<span class="item_price">$50.00</span><br> 
+						<p>  <input type="text" value="1" class="item_Quantity"><br>          
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+        			</div>
+	           </li>
+	           <li class="amazingcarousel-item">
+	                 <div class="amazingcarousel-item-container simpleCart_shelfItem">
+						<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 5" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
+						<div class="amazingcarousel-title item_name">Bundle 6</div>
+						<div class="amazingcarousel-description"></div>     
+						<span class="item_price">$50.00</span><br>  
+						<p>  <input type="text" value="1" class="item_Quantity"><br>
+			  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
+           			</div>
+	           </li>
+	        </ul>
+            <div class="amazingcarousel-prev"></div>
+            <div class="amazingcarousel-next"></div>
         </div>
-	                </li>
-	                <li class="amazingcarousel-item">
-	                    <div class="amazingcarousel-item-container simpleCart_shelfItem">
-	<div class="amazingcarousel-image"><a href="images/m6-lightbox.png" title="Bundle 5" class="html5lightbox" data-group="amazingcarousel-3"><img src="images/m6.png" class="item_thumb"   /></a></div>
-
-	<div class="amazingcarousel-title item_name">Bundle 6</div>
-	<div class="amazingcarousel-description"></div>     
-			<span class="item_price">$50.00</span><br>  
-			<p>  <input type="text" value="1" class="item_Quantity"><br>
-  			<a class="item_add" href="javascript:;"> <button id="addItem" class="btn btn-default"  onclick="this.blur();" type="button">Add to Cart</button> </a></p>
-           </div>
-	                </li>
-	            </ul>
-	            <div class="amazingcarousel-prev"></div>
-	            <div class="amazingcarousel-next"></div>
-	        </div>
-	        <div class="amazingcarousel-nav"></div>
-	        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">JavaScript Carousel</a></div>
+        <div class="amazingcarousel-nav"></div>
+        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">JavaScript Carousel</a></div>
 	    </div>
 	</div>
-
-
-
 </body>
 </html>
