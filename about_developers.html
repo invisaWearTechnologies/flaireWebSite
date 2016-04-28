@@ -24,6 +24,10 @@
 	<script src="js/jquery-2.2.2.min.js"></script>
 	<script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 	<script src="simpleCart.js"></script>
+	<script src="carouselengine_about/jquery.js"></script>
+    <script src="carouselengine_about/amazingcarousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="carouselengine_about/initcarousel-7.css">
+    <script src="carouselengine_about/initcarousel-7.js"></script>
  </head> 
  
  <body> 
@@ -59,18 +63,45 @@
 		</div>
 	</section>
 
-
+	<div class='dev_title'> 
+ 		<h1>About the Developers</h1> 
+ 	 <div>
     <!--Image of Developers-->
     
     <div>
-		<image class="about-image-content" src="images/about_us.jpg" alt="About Page Picture">
+		<div id="amazingcarousel-container-7">
+		    <div id="amazingcarousel-7" style="display:none;position:relative;width:100%;max-width:1200px;margin:0px auto 0px;">
+		        <div class="amazingcarousel-list-container">
+		            <ul class="amazingcarousel-list">
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/photoshoot-lightbox.jpg" class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/photoshoot.jpg" /></a></div>                    </div>
+		                </li>
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/Prototyping-lightbox.jpg" class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/Prototyping.jpg" /></a></div>                    </div>
+		                </li>
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/DM Finale-lightbox.jpg" class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/DM Finale.jpg" /></a></div>                    </div>
+		                </li>
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/chancellor-lightbox.jpg" title="chancellor"  class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/chancellor.jpg"  alt="chancellor" /></a></div>                    </div>
+		                </li>
+		            </ul>
+		            <div class="amazingcarousel-prev"></div>
+		            <div class="amazingcarousel-next"></div>
+		        </div>
+		        <div class="amazingcarousel-nav"></div>
+		        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Carousel</a></div>
+		    </div>
+		</div>
 	</div>
     
 	
 	<!--About the Developers Section of the Page-->
- 	<div class='dev_title'> 
- 		<h1>About the Developers</h1> 
- 	 <div>
+ 	
      <br>
      <br>
  	<!--About Each developer--> 
@@ -100,7 +131,7 @@
 		<image class = 'alex_pic' src="images/alex.jpg" alt="dev pic"  >
 	 <h2> Alex Chen </h2>
 	 <h3>Web Developer</h3>
-		<h4> Computer Science</h4>
+	<h4> Computer Science</h4>
 	 <a href="https://www.linkedin.com/in/alex-chen-70b01986">
       
           <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Rajia Abdelaziz's profile on LinkedIn">

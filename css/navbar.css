@@ -112,6 +112,7 @@ hr {
 	text-decoration: none;
 }
 
+
 /* -----------------------Styles for Slides ---------------------*/
 
 /* Slide 0: Page Title and Nav Bar */
@@ -561,6 +562,7 @@ hr {
     letter-spacing: 5px;
 	
 }
+
 /*heading hover effect*/
  #vertical-menu h3:hover {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
@@ -575,6 +577,7 @@ hr {
     list-style-type: none;
 }
 #vertical-menu p{
+	text-align: center;
 	font-size: 16px;
 	font-family: "MarkWeb-ExtraLight","Helvetica Neue",Helvetica,Calibri,Arial,Sans-Serif;
 }
@@ -609,6 +612,7 @@ hr {
   width: 100%;	
   height: 50%;
 }
+
 .dev_title{
 	font-family: 'Playfair Display', serif;
 	width: 100%;
@@ -628,8 +632,12 @@ hr {
 .madhu h2{
 	color: #808080;
 	font-weight: bold;
+	margin-left: -15%;
 }
 
+.madhu h4 {
+	margin-left: -15%;
+}
 .madhu_pic{
     width:150px;
     height:150px;
@@ -637,16 +645,18 @@ hr {
     border-radius: 50%;
 }
 .rajia{
-	
 	position:absolute;
 	width: 40%;
 	height:40%;
 	margin-left: 45%
-	
 }
 .rajia h2{
+	margin-left: -5%;
 	color:  #736F6E;
 	font-weight: bold;
+}
+.rajia h3, h4 {
+	margin-left: -15%;
 }
 .rajia_pic{
 	width:150px;
@@ -657,6 +667,7 @@ hr {
 .rajia p{
 	font-family: "Times New Roman", Times, serif;
 	margin-left: 30px;
+	margin-left: -5%;
 }
 .alex{
 	clear: left;
@@ -674,8 +685,11 @@ hr {
 .alex h2{
 	color: #736F6E;
 	font-weight: bold;
+	margin-left: 1%;
 }
-
+.alex h4 {
+	margin-left: 1%;
+}
 .jeremy{
 	position:absolute;
 	float: left;
@@ -696,6 +710,18 @@ hr {
 	font-family: 'Playfair Display', serif;	
 	color: #736F6E;
 	font-weight: bold;
+	margin-left: -7%;
+}
+.jeremy h4 {
+	margin-left: -1%;
+}
+
+.jeremy h3 {
+	margin-left: -2%;
+}
+
+.jeremy img {
+	margin-left: -2%;
 }
 .erin{
 	position:absolute;
@@ -717,6 +743,17 @@ hr {
 	font-family: 'Playfair Display', serif;	
 	color: #736F6E;
 	font-weight: bold;
+	margin-left: -5%;
+}
+
+.erin h3 {
+	margin-left: -7.5%;
+}
+.erin h4 {
+	margin-left: -5%;
+}
+.erin img {
+	margin-left: -3%;
 }
 .ray{
 	position:absolute;
@@ -738,18 +775,42 @@ hr {
 	font-family: 'Playfair Display', serif;	
 	color: #736F6E;
 	font-weight: bold;
+	margin-left: -19%;
+}
+
+.ray h3 {
+	margin-left: -9%;
+}
+
+.ray h4 {
+	margin-left: -5%;
+}
+.ray img {
+	margin-left: -2%;
 }
 
 /* ------------------------------Styles for the Set-Up Device Page ------------*/
+.app-screenshot img{ 
+	margin-top: 20%;
+	margin-left: 15%;
+	margin-right: 1%;
+}
 .device_setup{
 	border: 5px solid black;	
 	width: 50%;
 	height: 50%;
 	float: right;
 	margin-right: 10%;
+	margin-bottom: 5%;
 }
 .deviceInfo{
 	width: 100%
+}
+.device_screenshots {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	display: block;
 }
 .device_image{
   display: block;
