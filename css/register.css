@@ -1,6 +1,7 @@
 
 /* css for the registration page */
 
+/*css for the Resistration main header */
 h2
 {
   position:absolute;
@@ -8,6 +9,7 @@ h2
   top: 20%;
 }
 
+/* css for the info header*/
 #infoheader
 {
   position: absolute;
@@ -15,6 +17,7 @@ h2
   top: 32%;
 }
 
+/*css for the medical conditions header */
 #medheader
 {
   position: absolute;
@@ -22,7 +25,7 @@ h2
   top: 32%;
 }
 
-
+/* css for the information fieldset*/
 #information
 {
   position: absolute;
@@ -36,6 +39,7 @@ h2
   background-color: #D3D3D3;
 }
 
+/* css for the medical fieldset*/
 #Medical
 {
   position: absolute;
@@ -49,6 +53,7 @@ h2
   background-color: #D3D3D3;
 }
 
+/*css for the registration fieldset */
 #registration
 {
   position: absolute;
@@ -69,17 +74,20 @@ h2
   width: 250px;
 }
 
+/* css for the forms that are on the same line to add a space between them */
 #space
 {
   margin-left: 2%;
 }
 
+/* css for the form boxes*/
 #box
 {
   margin-left: 5px;
   margin-bottom:15px;
 }
 
+/* css for the form boxes that are smaller*/
 #smallbox
 {
   margin-left: 5px;
@@ -87,6 +95,7 @@ h2
   width: 25px;
 }
 
+/* css for the dob form*/
 #dob
 {
   margin-left: 5px;
@@ -94,6 +103,7 @@ h2
   width: 100px;
 }
 
+/* css for the medical condition form boxes*/
 #medical
 {
   margin-left: 2px;
@@ -101,11 +111,13 @@ h2
   width: 95%;
 }
 
+/*css for the information fieldset */
 #input
 {
   margin-left:2%;
 }
 
+/*css for the medical fieldset */
 #input2
 {
   margin-left: 4%;
