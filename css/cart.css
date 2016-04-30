@@ -28,6 +28,7 @@ th
   text-align:center; 
 }
 
+/* properties for the table columns */
 td
 {
   vertical-align:middle;
@@ -36,41 +37,47 @@ td
   padding: 0 20px 15px 20px;
 }
 
+/* properites for the image column */
 th:nth-child(1)
 {
     width: 170px;
 }
 
-th:nth-child(3) 
-{
-    width: 75px;
-}
-
+/* properites for the item name column */
 th:nth-child(2) 
 {
     width: 200px;
 }
 
+/*properites for the price column*/
+th:nth-child(3) 
+{
+    width: 75px;
+}
+
+/*properties for the increment column */
 th:nth-child(4)
 {
     width: 20px;
 }
 
+/* properties for the quantity column*/
 th:nth-child(5)
 {
     width: 20px;
 }
 
+/* properties for the decrement column */
 th:nth-child(6)
 {
     width: 50px;
 }
 
+/* properties for the remove button*/
 th:nth-child(7)
 {
     width: 80px;
 }
-
 
 /* changes properties for the rows in the table */
 tr
@@ -86,6 +93,7 @@ img
   width: 150px;
 }
 
+/* properties for the checkout quantity and total price container */
 #checkoutContainer
 {
   position:fixed;
@@ -96,7 +104,7 @@ img
   border: 4px solid;
   background-color: white;
 } 
-
+/* css for the total price title display box  */
 #cartTotal
 {
   position:absolute;
@@ -106,6 +114,7 @@ img
   font-size: 18px;
 }
 
+/* css for the total price number*/
 #total
 {
   position:absolute;
@@ -115,6 +124,7 @@ img
   font-size: 18px;
 }
 
+/* css for the cart checkout button*/
 #cartCheckout
 {
   position:absolute;
@@ -126,9 +136,5 @@ img
   font-size: 18px;
 }
 
-.item-decrement
-{
-  border: 1 px solid black;
-}
 
 
