@@ -1,13 +1,10 @@
+
+/*css for the fieldset div */
 #formcontainer
 {
     position: relative;
     width: 100%;
     height: 500px;
-}
-
-fieldset
-{
-  /*box-shadow: 10px 10px 5px #888888;*/
 }
 
 /* properties for the login title */
@@ -103,6 +100,7 @@ fieldset
   margin-bottom: 5px;
 }
 
+/* makes the error messages red */
 #input label.error, #input2 label.error
 {
   color : #f00;
@@ -117,6 +115,7 @@ fieldset
   border : 2px solid red;
 }
 
+/* css for the error message box container*/
 #errorContainer {
     position:relative;
     top: 20px;
@@ -128,7 +127,8 @@ fieldset
     border: 1px solid #FF2323;
     padding-top: 0;
 }
- 
+
+/* css for the error message text*/
 #errorContainer label {
     float: none;
     width: auto;
@@ -142,11 +142,13 @@ fieldset
   margin: 10px 0 10px 0;
 }
 
+/*hides the name of the items in shop.html*/
 .item_name
 {
   display:none;
 }
 
+/* add css to the add item link to make it look like a bootstrap button*/
 #addItem
 {
   border: 1px solid black;
