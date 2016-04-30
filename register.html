@@ -64,18 +64,20 @@
     <fieldset id="information">
       <form id="input" name="input">
         <p>
-          <label for="firstname">First Name</label>
-          <input type="text" id="box" name="firstname" placeholder="First Name">
-          <label id="space" for=lastname"">Last Name</label>
-          <input type="text" id="box" name="Last Name" placeholder="Last Name">
+          <label for="full-name">Full Name</label>
+          <input type="text" class="form-control" id="full-name" name="fullname" placeholder="Full Name">
         </p>
         <p>
-          <label for="gender">Gender (M/F)</label>
-          <input type="text" id="smallbox" name="gender">
-          <label id="space" for="age">Age</label>
-          <input type="text" id="smallbox" name="age">
-          <label id="space" for="DOB">Date of Birth</label>
-          <input type="text" id="dob" name="DOB" placeholder="(MM/DD/YYYY)">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <input type="text" class="form-control" id="smallbox" placeholder="M/F">
+           </div>
+            <div class="form-group">
+              <label for="DoB">Date of Birth</label>
+              <input type="Date" class="form-control" id="dob" placeholder="MM/DD/YYYY">
+            </div>
+           </form>  
         </p>
         <p>
           <label for="height">Height</label>
@@ -92,12 +94,9 @@
     <fieldset id="Medical">
       <form id="input3" name="input">
         <p>
-          <input type="text" id="medical" name="medical" placeholder="Medical Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
+          <input type="text" class="form-control" id="medical" name="medical" placeholder="Condition">
+          <input type="text" class="form-control" id="medical" name="medical" placeholder="Condition">
+          <input type="text" class="form-control" id="medical" name="medical" placeholder="Condition">
         </p>
       </form>
     </fieldset>
@@ -110,7 +109,7 @@
           <label for="Registration">Registration Number</label>
           <input type="text" id="register" name="Registration" placeholder="Registation Number">
         </p>
-          <input type="submit" value="Submit" id="submit">
+           <button type="submit" id="submit" class="btn btn-default">Register Device</button>
       </form>
     </fieldset>
   </body>

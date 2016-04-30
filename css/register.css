@@ -13,7 +13,7 @@ h2
 #infoheader
 {
   position: absolute;
-  left: 19%;
+  left: 25%;
   top: 32%;
 }
 
@@ -29,14 +29,14 @@ h2
 #information
 {
   position: absolute;
-  left: 19%;
+  left: 25%;
   top: 40%;
   width :41%;
   height: 200px;
-  border : 2px solid black;
+ /* border : 2px solid black;*/
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #D3D3D3;
+  /*background-color: #D3D3D3;*/
 }
 
 /* css for the medical fieldset*/
@@ -47,10 +47,10 @@ h2
   top: 40%;
   width :200px;
   height: 200px;
-  border : 2px solid black;
+  /*border : 2px solid black;*/
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #D3D3D3;
+  /*background-color: #D3D3D3;*/
 }
 
 /*css for the registration fieldset */
@@ -61,10 +61,10 @@ h2
   top: 80%;
   width : 34%;
   height: 15%;
-  border : 2px solid black;
+ /* border : 2px solid black;*/
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #D3D3D3;
+  /*background-color: #D3D3D3;*/
 }
 
 /* the margin for the input boxes */
@@ -92,7 +92,7 @@ h2
 {
   margin-left: 5px;
   margin-bottom:10px;
-  width: 25px;
+  width: 50px;
 }
 
 /* css for the dob form*/
@@ -100,7 +100,7 @@ h2
 {
   margin-left: 5px;
   margin-bottom:15px;
-  width: 100px;
+  width: 170px;
 }
 
 /* css for the medical condition form boxes*/
@@ -131,3 +131,6 @@ h2
   margin-bottom: 5px;
 }
 
+#full-name {
+  width: 50%;
+}

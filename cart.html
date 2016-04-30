@@ -53,7 +53,7 @@
 							</ul>
 						</li>
 						<li><a href='shop.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">SHOP</button></a></li>
-						<li><a href='login.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
+						<li><a href='login.html'><button class="btn btn-default"  aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
 							</button></a>
 						</li>
 						<li><a href='cart.html' class="glyphicon glyphicon-shopping-cart btn btn-default" aria-hidden="true">(<span class="simpleCart_quantity">
@@ -75,8 +75,26 @@
 	  <div id="total" class="simpleCart_total"></div>
 
           <!-- create a checkout button -->
-          <a href="javascript:;" class="simpleCart_checkout"><button id="cartCheckout" class="btn btn-default"  onclick="this.blur();" type="button">Checkout</button></a>
+          <a href="javascript:;"class='simpleCart_checkout' ><button id="cartCheckout" class="btn btn-default" data-toggle="modal" data-target="#myModal" onclick="this.blur();" type="button">Checkout</button></a>
  </div>
+
+ <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Redirecting to PayPal</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to checkout? This will redirect you to a secure PayPal form.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <a href="cart.html"><button type="button" class="btn btn-default simpleCart_checkout">Yes</button></a>
+      </div>
+    </div>
 
   </body>
 </html>
