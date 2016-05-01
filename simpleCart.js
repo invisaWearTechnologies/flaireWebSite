@@ -1264,9 +1264,7 @@
 			baseEvents = {
 				  beforeAdd				: null
 				, afterAdd				:  
-       				 simpleCart.bind( 'afterAdd' , function( item ){ if (confirm( item.get("name") + " has been added to the cart! \n\nClick OK to view your shopping cart or \nCancel to continue shopping"))
-                                     document.location.href = "cart.html"; })
-
+       				 simpleCart.bind( 'afterAdd' , function( item ){})
 				, load					: null
 				, beforeSave			: null
 				, afterSave				: null
@@ -1276,8 +1274,8 @@
                                 simpleCart.bind( 'checkoutSuccess', function(item){simplecart.empty();})
 				, checkoutFail			: null
 				, beforeCheckout		:  
-				simpleCart.bind( 'beforeCheckout' , function( item ){ if(!confirm('Are you sure you want to proceed to checkout?'))
-	                            e.preventDefault(); })
+				simpleCart.bind( 'beforeCheckout' , function( item ){
+	                            })
 				, beforeRemove			: null
 			};
 			
