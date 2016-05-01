@@ -7,8 +7,8 @@
     </title>
 
     <!-- The css link -->
-    <link type="text/css" rel="stylesheet" href="css/register.css" >
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="css/register.css" >
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <!--Style Sheets-->
@@ -60,14 +60,14 @@
     <h3 id="infoheader"> Basic Information </h3>
     <h3 id="medheader"> Medical Condition(s) </h3>
 
-    <!-- The fieldset for adding profile information -->
+    <!-- The fieldset for adding profile information using bootstrap forms -->
     <fieldset id="information">
-      <form id="input" name="input">
-        <p>
+       
+       <form class="form-inline name">
           <label for="full-name">Full Name</label>
           <input type="text" class="form-control" id="full-name" name="fullname" placeholder="Full Name">
-        </p>
-        <p>
+       </form>
+
           <form class="form-inline">
             <div class="form-group">
               <label for="gender">Gender</label>
@@ -80,14 +80,15 @@
            </form>  
         </p>
         <p>
+        <form class="form-inline">
           <label for="height">Height</label>
-          <input type="text" id="smallbox" name="height">
-          <label id="space" for="weight">Weight</label>
-          <input type="text" id="smallbox" name="Weight">
+          <input type="text" class="form-control" id="smallbox" name="height">
+          <label id="space"  for="weight">Weight</label>
+          <input type="text" class="form-control" id="smallbox" name="Weight">
           <label id="space" for="school">School</label>
-          <input type="text" id="box" name="school" placeholder="School">
-        </p>
-      </form>
+          <input type="text" class="form-control" id="box" name="school" placeholder="School">
+        </form>
+      </p>
     </fieldset>
   
     <!-- fieldset for adding medical conditions -->
@@ -101,14 +102,13 @@
       </form>
     </fieldset>
 
-
     <!-- fieldset for registering the device-->
     <fieldset id="registration">
-      <form id="input2" name="input" action="index.html" method="GET" >
-        <p>
+      <form id="input2" class="form-inline" name="input" action="index.html" method="GET" >
+        
           <label for="Registration">Registration Number</label>
-          <input type="text" id="register" name="Registration" placeholder="Registation Number">
-        </p>
+          <input type="text" class="form-control" id="register" name="Registration" placeholder="Registation Number">
+     
            <button type="submit" id="submit" class="btn btn-default">Register Device</button>
       </form>
     </fieldset>

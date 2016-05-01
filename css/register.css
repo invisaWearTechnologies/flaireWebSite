@@ -58,13 +58,12 @@ h2
 {
   position: absolute;
   left: 30%;
-  top: 80%;
+  top: 65%;
   width : 34%;
   height: 15%;
- /* border : 2px solid black;*/
   font-family : Helvetica;
   font-weight : bold;
-  /*background-color: #D3D3D3;*/
+  
 }
 
 /* the margin for the input boxes */
@@ -100,7 +99,7 @@ h2
 {
   margin-left: 5px;
   margin-bottom:15px;
-  width: 170px;
+  width: auto;
 }
 
 /* css for the medical condition form boxes*/
@@ -112,9 +111,9 @@ h2
 }
 
 /*css for the information fieldset */
-#input
+.name
 {
-  margin-left:2%;
+  padding-bottom: 25px;
 }
 
 /*css for the medical fieldset */
