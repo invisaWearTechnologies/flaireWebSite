@@ -1,10 +1,371 @@
+/*
+ * Authors: Rajia Abdelaziz, Jeremey Daigneau, Madhu Prakash, Alex Chen
+ * Created: February 20, 2016
+ * Last Updated: 3/05/16 by Rajia Abdelaziz
+*/
 
+/*-------------------------------------- Overall style of each page --------------------------------------------------- */
 
-html, body {            /* overall style of each page */
-  
-  margin: 0;            /* set margins to 0, so there's no wasted white space near the edges of the page */
-  background-color: #cccccc; /* sets background color of each page to a light gray */
+html {
+	background: url(" ");
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
 }
+
+/*--------------------------------------- Styles for Home Page ---------------------------------------------------------*/
+
+/*Styles for hr */
+hr {
+	display: block;
+    color: Black;
+}
+
+
+/* Styles for the header of the page (the div containing the navigation bar) */
+.header {
+     width: 100%;                 	/* sizes the div to the width of the screen*/
+     height: 75px;               	/* sets the height of the header div to 75px*/
+     background-size: 100%;       	/* ensures the picture fills the div*/
+     background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
+}
+
+/* Styles for the Navigation Bar */
+.nav-bar ul {
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    background-color: #000000;
+    box-shadow: 0 5px 20px -5px ;
+    opacity : .75;
+    width: 100%;
+    z-index: 110;   
+}
+
+.nav-bar li {
+    float: left;
+    border-right: 1px solid #bbb;  
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #111;
+}
+
+.nav-bar .active {
+    background-color: #736F6E;
+}
+
+.nav-bar .top-right {
+  float:right;
+}
+/* Styles for the Page's Text */
+.flaireHeader {
+	position: relative;
+	color: #000000;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 75px;
+	z-index: -1;
+}
+
+.flaireSubText {
+	color: #000000;	
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 50px;
+}
+/* Styles for the Contact Info Bar */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: .75;
+  width: 100%;
+  background-color: #000000;
+  height: 40px;
+  margin-bottom: 45px;
+}
+
+.footer ul {
+  	text-align: center;
+  	background-color: #000000;
+  	box-shadow: 10px 10px 20px -5px ;
+  	list-style-type: none;
+  	bottom: 0;
+  
+}
+   
+.footer li {
+	background-color: #000000;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+/* -----------------------Styles for Slides ---------------------*/
+
+/* Slide 0: Page Title and Nav Bar */
+#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}
+#slide-0 .hsContent {
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.active {
+	border-color: #C7A126;
+}
+
+#slide-0 {
+	/*border: 1px solid #000000;*/
+	border-bottom: 2px solid Black;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}	
+
+.navi .btn-default {
+	border: 2px solid #000000;
+	color: #000000;
+	background: none;
+	padding: 12px 22px;
+	border-color: black;
+}
+
+.navi .btn-default .active {
+	border-color: #C7A126;
+}
+.navi .btn-default:hover {
+	background-color: #000000;
+	color: #ffffff;
+	opacity: .80;
+	border: 2px solid #000000;
+}
+
+#slide-0 h1 {
+	color: Black;
+	font-size: 65px;
+	font-family: Georgia;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 1px;
+
+
+}
+
+.navi {
+	margin-top: 2%;
+	font-family: Georgia;
+	text-align: right;	
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.flaireicon {
+	margin-right: 35%;
+	font-size: 35px;
+}
+.navi li {
+ 	display: inline;
+ 	list-style-type: none;
+ 	margin-left: 0px;
+ 	/*margin-right: 25px;*/
+ 	font-family: Georgia;
+ 	font-weight: bold;
+ 	/*border: 2px solid #000000;*/
+ 	padding: 10px;
+ }
+
+
+
+ .navi a {
+ 	color: black;
+ 	text-decoration: none;
+ }
+
+ .navi a:hover {
+ 	/*border: 2px solid #ffffff;*/
+ 	text-decoration: none;
+
+ }
+/* Slide 1: Product Image, Description and Button*/
+
+/*hscontent contains the paragraph and button*/
+
+
+#slide-1 .hsContent {
+	margin-left: 60%;
+	margin-right: 10%;
+	position: absolute;
+	top: 25%;
+	text-align: center;
+}
+
+	#slide-1 p {
+		margin-top: 0%;
+		margin-right: 5%;
+		color: black;
+		font-family: Quicksand;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#slide-1 button {
+		font-family: Georgia;
+		font-size: 30px;
+		text-align: center;
+		border: 2px solid #000000;
+		color: #000000;
+		background: none;
+		padding: 12px 22px;
+		border-color: black;
+	}
+
+	#slide-1 button:hover {
+		background-color: #000000;
+		color: #ffffff;
+		opacity: .80;
+	}
+	
+
+#slide-1 img {
+	margin-left: 0%;
+}
+
+#slide-1 .hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/*Slide 2: Contact Info Bar */
+#slide-2 .hsContent {
+	text-align: center;
+	border-top: 2px solid Black;
+	border-bottom: 2px solid Black;
+}
+	#slide-2 p {
+		margin-top: .7%;
+		margin-bottom: -1%;
+		color: Black;
+		font-family: Georgia;
+		font-size: 17px;
+		text-align: center;
+	}
+
+
+/*Slide 3: Picture of Flaire */
+#slide-3 {
+	height: 25%;
+}
+#slide-3 img {
+	width: 100%;
+    
+	margin-top: -2.9%;
+	margin-bottom: -0.5%;
+}
+
+/*Slide 4: Description of Flaire */
+#slide-4 {
+	border-top: 2px solid Black;
+	
+}
+#slide-4 .hsContent {
+	top: 10px;
+	text-align: center;
+}
+	#slide-4 h2 {
+		color: Black;
+		font-size: 45px;
+		font-family: Georgia;
+		margin-top: 2%;
+	}
+
+	#slide-4 p {
+		color: Black;
+		font-family: Georgia;
+		font-size: 25px;
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 2%;
+		margin-bottom: -1.9%;
+	}	
+
+/*Slide 5: Extra Contact Bar */
+#slide-5 .hsContent {
+	background-color: white;
+	text-align: center;
+    margin-bottom: 2%;
+}
+	#slide-5 p {
+		top: 25%;
+		color: Black;
+		font-family: Georgia;
+		font-size: 17px;
+	}
+    
+    #slide-6 {
+        border-bottom: 2px solid Black;
+        margin-bottom: 3%;
+    }
+    #slide-6 .hsContent {
+	margin-left: 60%;
+	margin-right: 10%;
+	position: absolute;
+	top: 25%;
+	text-align: center;
+}
+
+	#slide-6 p {
+		margin-top: 0%;
+		margin-right: 5%;
+		color: black;
+		font-family: Quicksand;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#slide-6 button {
+		font-family: Georgia;
+		font-size: 30px;
+		text-align: center;
+		border: 2px solid #000000;
+		color: #000000;
+		background: none;
+		padding: 12px 22px;
+		border-color: black;
+	}
+
+	#slide-6 button:hover {
+		background-color: #000000;
+		color: #ffffff;
+		opacity: .80;
+	}
+	
+
+#slide-6 img {
+	margin-left: 0%;
+}
+
+#slide-6 .hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+/* ---------------------- Styles for About Page ------------------- */
 
 .about-pic {
   width: 90%;
@@ -16,11 +377,18 @@ html, body {            /* overall style of each page */
 
 .about-list {
   list-style-type: none;
+  font-family: 'Playfair Display', serif;
+  margin-top: 50px;
+}
+
+.about-list ul {
+	font-family: 'Playfair Display', serif;
 }
 
 .about-list li {
     margin-bottom: 10px;
     margin-left: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 .image-content {
@@ -35,185 +403,431 @@ html, body {            /* overall style of each page */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 250px;
   width: 90%;	
   height: 300px;
+}
+
+.about-image-content-b {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 80%;	
+  height: 400px;
 }
 
 .about-list li a {
     color: #000000;
     font-size: 30px;
     text-decoration: none;
-}
-.header {
-                                  /* image obtained from takeadaytrip.com http://takeadaytrip.com/great-places/massachusetts/horn-pond-woburn-winchester-ma/
-                                  /*Directs page to where the picture is located*/
-    /* background-image: url('flaireLogo.png');*/
-     margin: auto;                /*Ensures picture doesn't stretch outside div*/
-     width: 100%;                 /* sizes the div to the width of the screen*/
-     height: 200px;               /* sets the height of the header div to 300px*/
-     background-size: 100%;       /* ensures the picture fills the div*/
-     background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
-   /*  position: fixed;*/
-     margin-top: 10px;
-     /*clear: both;*/
-     /*box-shadow: 0 -5px 20px 5px ;*/ /* places a small shadow below the div, giving it some depth */
+    font-family: 'Playfair Display', serif;
 }
 
-.nav-bar ul {
-    position: fixed;
-    list-style-type: none;
-    padding: 0;
-    /*overflow: hidden;*/
-    background-color: #000000;
-    box-shadow: 0 5px 20px -5px ;
-    /*float:right;*/
-    opacity : .75;
-    width: 100%;
-   /* margin-top: 10px;*/
-    /*margin-right: 10px;
-    margin-left: 10px;*/
-    z-index: 110;
-   
+/*-------------------------------Styles for Shop Page --------------------------------------*/  
+
+.pictureBar {
+  	height: 300px;
+  	width: 100%;
+  	text-align: center;
 }
 
-.logo-div {
-    float: left;
-    width: 0%;
-    background-color: #000000;
-    opacity : .75;
-    box-shadow: 0 5px 20px -5px ;
-   /* margin-top: 10px;*/
-  /*margin-left: 10px;*/
-   z-index: 100;
-   padding: 0;
-
+.pictureBar ul {
+  	background-color: #000000;
+	margin-top: 30px;
 }
 
-.flaire-div {
-  float: right;
-  opacity: .75;
-  height: 5%;
-  width: 100%;
-  margin-top: 5%;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: #000000;
-  box-shadow: 0 5px 20px -5px ;
+.pictureBar li {
+	display: inline-block;
+	margin-right: 100px;
+	margin-left: 10px;
+	margin-top: 30px;
+	text-decoration: none;
+	box-shadow: 0 10px 20px 5px ;
 }
 
-#logo {
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#flaire {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 150px;
-  width: 60%;
-}
-
-.nav-bar li {
-    float: left;
-     border-right: 1px solid #bbb;
-   
-}
-
-.nav-bar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.nav-bar li a:hover {
-    background-color: #111;
-}
-
-.nav-bar .active {
-    background-color: #144c4d;
-}
-
-.nav-bar .top-right {
-  float:right;
-
+.componentsTag {
+	margin-left: 100px;
+	font-family: 'Playfair Display', serif;
 }
 
 .descriptionBar {
-  list-style-type: none;
-  display: inline;
+	text-align: center;
+}
 
-  margin-bottom: 50px;
-  margin-top: 50px;
+.descriptionBar ul {
+    list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
 }
+
 .descriptionBar li {
-  display: inline;
-  margin-bottom: 50px;
-  margin-top: 50px;
+    display: inline;
+    margin-right: 130px;
+	margin-left: 80px;
+	text-decoration: none;
 }
-.pictureBar {
-  height: 300px;
-  width: 100%;
-  text-align: center;
+
+.descriptionBar li a {
+	text-decoration: none;
+	color: black;
 }
+
+.bundles-descriptionBar {
+	text-align: center;
+}
+
+.bundles-descriptionBar ul {
+    list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.bundles-descriptionBar li {
+    display: inline;
+    margin-right: 80px;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+.bundles-descriptionBar li a {
+	text-decoration: none;
+	color: black;
+}
+
+.watches-descriptionBar {
+	text-align: center;
+}
+
+.watches-descriptionBar ul {
+    list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.watches-descriptionBar li {
+    display: inline;
+    margin-right: 110px;
+	margin-left: 50px;
+	text-decoration: none;
+}
+
+.watches-descriptionBar li a {
+	text-decoration: none;
+	color: black;
+}
+/* -----------------------------Styles for Next Page --------------------------------------*/
 .main-content {
-  /*background-color: #009ACD;*/
   width: 100%;
   height: 300px;
-  /*padding-top: 300px;*/
   margin-left: 10px;
   margin-right: 10px;
   clear: both;
-}
-   /*List Items should be displayed horizontally and floated to the left.*/
-  .pictureBar ul {
-    background-color: #000000;
-    margin-top: 30px;
-  }
- .pictureBar li {
-    display: inline-block;
-    /*float: left;*/
-    margin-right: 75px;
-    margin-left: 3px;
-    margin-top: 30px;
-   /* padding: 15px 15px;*/
-    text-decoration: none;
-     box-shadow: 0 5px 20px -5px ;
-  }
+}  
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: .75;
-  width: 100%;
-  background-color: #000000;
-  height: 40px;
+/* --------------------------- Styles for the FAQ Page ------------------------------------*/
 
+.about-image-content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;	
+  height: 50%;
 }
-.footer ul {
-
-  text-align: center;
-  background-color: #000000;
-  
-  box-shadow: 10px 10px 20px -5px ;
-  list-style-type: none;
-  
-  bottom: 0;
-  
+/*Basic reset*/
+ * {
+    margin: 0;
+    padding: 0;
 }
-   
-.footer li {
-  background-color: #000000;
-    display: inline-block;
+#vertical-menu {
+    background: #004050;
+    width: 90%;
+    margin: 100px auto 0 auto;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    /*box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);*/
 }
-  
+/*heading styles*/
+ #vertical-menu h3 {
+    font-size: 20px;
+    line-height: 34px;
+    padding: 0 10px;
+    cursor: pointer;
+    /*fallback for browsers not supporting gradients*/
+    background: #003040;
+    background: linear-gradient(#003040, #002535);
+	font-weight: normal;
+    font-family: "MarkWeb-ExtraLight","Helvetica Neue",Helvetica,Calibri,Arial,Sans-Serif;
+    letter-spacing: 5px;
+	
+}
+
+/*heading hover effect*/
+ #vertical-menu h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+ #vertical-menu h3 span {
+    font-size: 16px;
+    margin-right: 10%;
+}
+/*list items*/
+ #vertical-menu li {
+    list-style-type: none;
+}
+#vertical-menu p{
+	text-align: center;
+	font-size: 16px;
+	font-family: "MarkWeb-ExtraLight","Helvetica Neue",Helvetica,Calibri,Arial,Sans-Serif;
+}
+/*links*/
+ #vertical-menu ul ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 27px;
+    display: block;
+    padding: 0 15px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+/*hover effect on links*/
+ #vertical-menu ul ul li a:hover {
+    background: #003545;
+    /*border-left: 5px solid lightgreen;*/
+}
+/*Lets hide the non active LIs by default*/
+ #vertical-menu ul ul {
+    display: none;
+}
+#vertical-menu li.active ul {
+    display: block;
+}
+/* --------------------------- Styles for the About the Developers Page -------------------*/
+.about-image-content{
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;	
+  height: 50%;
+}
+
+.dev_title{
+	font-family: 'Playfair Display', serif;
+	width: 100%;
+	height:100%;
+}
+.dev_title h1{
+	color:black;
+	text-align: center;
+}
+.madhu{
+	float: left;
+	width: 40%;
+	height: 30%;
+	padding-left: 15%;
+}
+
+.madhu h2{
+	color: #808080;
+	font-weight: bold;
+	margin-left: -15%;
+}
+
+.madhu h4 {
+	margin-left: -15%;
+}
+.madhu_pic{
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.rajia{
+	position:absolute;
+	width: 40%;
+	height:40%;
+	margin-left: 45%
+}
+.rajia h2{
+	margin-left: -5%;
+	color:  #736F6E;
+	font-weight: bold;
+}
+.rajia h3, h4 {
+	margin-left: -15%;
+}
+.rajia_pic{
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.rajia p{
+	font-family: "Times New Roman", Times, serif;
+	margin-left: 30px;
+	margin-left: -5%;
+}
+.alex{
+	clear: left;
+	width: 20%;
+	height: 30%;
+	position:absolute;
+	margin-left:80%
+}
+.alex_pic{
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
+}
+.alex h2{
+	color: #736F6E;
+	font-weight: bold;
+	margin-left: 1%;
+}
+.alex h4 {
+	margin-left: 1%;
+}
+.jeremy{
+	position:absolute;
+	float: left;
+	clear: right;
+	width: 40%;
+	height: 40%;
+	margin-top: 25%;
+    margin-left: 15%;
+}
+.jeremy_pic{
+
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
+}
+.jeremy h2{
+	font-family: 'Playfair Display', serif;	
+	color: #736F6E;
+	font-weight: bold;
+	margin-left: -7%;
+}
+.jeremy h4 {
+	margin-left: -1%;
+}
+
+.jeremy h3 {
+	margin-left: -2%;
+}
+
+.jeremy img {
+	margin-left: -2%;
+}
+.erin{
+	position:absolute;
+	float: left;
+	clear: right;
+	width: 40%;
+	height: 40%;
+	margin-top: 25%;
+	margin-left: 45%
+}
+.erin_pic{
+
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
+}
+.erin h2{
+	font-family: 'Playfair Display', serif;	
+	color: #736F6E;
+	font-weight: bold;
+	margin-left: -5%;
+}
+
+.erin h3 {
+	margin-left: -7.5%;
+}
+.erin h4 {
+	margin-left: -5%;
+}
+.erin img {
+	margin-left: -3%;
+}
+.ray{
+	position:absolute;
+	float: left;
+	clear: right;
+    width: 20%;
+	height: 40%;
+	margin-top: 25%;
+	margin-left: 80%
+}
+.ray_pic{
+
+	width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;	
+}
+.ray h2{
+	font-family: 'Playfair Display', serif;	
+	color: #736F6E;
+	font-weight: bold;
+	margin-left: -19%;
+}
+
+.ray h3 {
+	margin-left: -9%;
+}
+
+.ray h4 {
+	margin-left: -5%;
+}
+.ray img {
+	margin-left: -2%;
+}
+
+/* ------------------------------Styles for the Set-Up Device Page ------------*/
+.app-screenshot img{ 
+	margin-top: 20%;
+	margin-left: 15%;
+	margin-right: 1%;
+}
+.device_setup{
+	border: 5px solid black;	
+	width: 50%;
+	height: 50%;
+	float: right;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+.deviceInfo{
+	width: 100%
+}
+.device_screenshots {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	display: block;
+}
+.device_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;	
+  height: 50%;
+}
+
+.device_setup li{
+	font-size: 130%;
+	list-style-type:decimal;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.device_pic{
+  width: 30%;
+  height: 30%;
+  float: left;
+}

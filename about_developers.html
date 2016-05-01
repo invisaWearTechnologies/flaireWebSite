@@ -4,92 +4,173 @@
  --> 
  <!DOCTYPE html> 
  
- 
  <html lang="en-us"> 
  <head> 
  	<meta charset="UTF-8"> 
  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
  
- 
  	<!--Page Title--> 
  	<title>invisaWearTechnologies</title> 
  
- 
  	<!--Google Font for Text--> 
- 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
- 
- 
- 	<!--Style Sheets--> 
- 	<link rel="StyleSheet" type="text/css" href="css/about_developers_css.css" media="screen"> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<!--Style Sheets-->
+	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
+	<link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+	<link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+	<script src="simpleCart.js"></script>
+	<script src="carouselengine_about/jquery.js"></script>
+    <script src="carouselengine_about/amazingcarousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="carouselengine_about/initcarousel-7.css">
+    <script src="carouselengine_about/initcarousel-7.js"></script>
  </head> 
+ 
  <body> 
- 
- 
- 	<!--The Page Header Contains a Unique Spectrum of Colors and the Logo--> 
-      <div class='header'> <!-- creates a div for the header for the page, the image and navbar --> 
-         <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar --> 
-         <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> 
-           <ul class='links'> <!-- a div that contains the list of links to other parts of the site--> 
-             <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page --> 
-             <li> <a class="active" href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info --> 
-             <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products--> 
-             <li class='top-right'> <a href=''>CART </a> </li> 
-             <li class='top-right'> <a href=''>CREATE ACCOUNT/LOGIN </a> </li> 
-           </ul>  
-           <div class='flaire-div'> <img id="flaire" src="Flaire.png"> </div> 
-         </div> 
-      </div> 
- 
-	
- 	<!--Pictures of Slides. Please Note: This will be a slideshow in the future.-->  
-	<image class="about-pic" src="about_page_pic.jpg" alt="About Page Picture">
- 	<div class='dev_title'> 
+ 	<!--Page Header Containing Navigation Bar-->
+    <section id="slide-0" class="homeSlideZero">
+		<div class="bcg">
+			<div class="hsContainer">
+				<!--<h1>Flaire</h1>-->
+				<div class="navi">
+					<ul>
+						<li class="flaireicon" style="font-family: Quicksand"><a>FLAIRE</a></li>
+						<li><a href="index.html"> <button class="btn btn-default " aria-haspopup="true" aria-expanded="true" type="button"> HOME </button></a></li>
+						<li class="dropdown"> 
+							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+								ABOUT 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="FAQ.html">FAQ</a></li>
+								<li><a href="about_developers.html">About the Developers</a></li>
+								<li><a href="set_up_device.html">Setup Device</a></li>
+							</ul>
+						</li>
+						<li><a href='shop.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">SHOP</button></a></li>
+						<li><a href='login.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
+							</button></a>
+						</li>
+						<li><a href='cart.html' class="glyphicon glyphicon-shopping-cart btn btn-default" aria-hidden="true">(<span class="simpleCart_quantity">
+                        </span>)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class='dev_title'> 
  		<h1>About the Developers</h1> 
- 	 
+ 	 <div>
+    <!--Image of Developers-->
+    
+    <div>
+		<div id="amazingcarousel-container-7">
+		    <div id="amazingcarousel-7" style="display:none;position:relative;width:100%;max-width:1200px;margin:0px auto 0px;">
+		        <div class="amazingcarousel-list-container">
+		            <ul class="amazingcarousel-list">
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/photoshoot-lightbox.jpg" class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/photoshoot.jpg" /></a></div>                    </div>
+		                </li>
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/Prototyping-lightbox.jpg" class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/Prototyping.jpg" /></a></div>                    </div>
+		                </li>
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/DM Finale-lightbox.jpg" class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/DM Finale.jpg" /></a></div>                    </div>
+		                </li>
+		                <li class="amazingcarousel-item">
+		                    <div class="amazingcarousel-item-container">
+		<div class="amazingcarousel-image"><a href="images_about/chancellor-lightbox.jpg" title="chancellor"  class="html5lightbox" data-group="amazingcarousel-7"><img src="images_about/chancellor.jpg"  alt="chancellor" /></a></div>                    </div>
+		                </li>
+		            </ul>
+		            <div class="amazingcarousel-prev"></div>
+		            <div class="amazingcarousel-next"></div>
+		        </div>
+		        <div class="amazingcarousel-nav"></div>
+		        <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Carousel</a></div>
+		    </div>
+		</div>
+	</div>
+    
+	
+	<!--About the Developers Section of the Page-->
+ 	
+     <br>
+     <br>
  	<!--About Each developer--> 
  	<div class='madhu'> 
-	<image class = 'madhu_pic' src="madhu.jpg" alt="dev pic"  >
- 	 <h2> Madhumathi Prakash</h2>
-	 <p>UMass Lowell <br/>
-		Major: Computer Science with Bioinformatics <br/>
-		She is the president of UML ACM computing society<br/>
-		The summers after Freshman, Sophomore, and Junior year, Madhu interned as a Software Engineer at Fidelity Investments<br/>
-		She was one of the 13 finalists in difference makers and won 1,000 dollars<br/>
-		Got the Who's Who Leadership award <br/>
-		She will be graduating spring 2016.
+ 	 
+	 <image class = 'madhu_pic' src="images/madhu.jpg" alt="dev pic"  >
+	 <h2> Madhumathi Prakash</h2>
+		<h3>Web Developer</h3>
+		<h4> Computer Science and Bioinformatics </h4>
+		<a href="https://www.linkedin.com/pub/madhumathi-prakash/7b/634/744">
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Madhumathi Prakash's profile on LinkedIn">
+		</a>
+
 	 </div>
+
 	 <div class ="rajia">
-		<image class = 'rajia_pic' src="rajia.jpg" alt="dev pic"  >
-	 <h2>Rajia Abdelazia</h2>
-	 
-	 <p>
-		Rajia is a Double Major in Electrical Engineering and Computer Science. <br/>
-		This past summer she interned at Amazon Robotics. <br/>
-		Previously, she worked at Plexxi Inc. as a software engineering intern. <br/>
-		While excelling in her many classes, she has served as President of the Society of Women Engineers chapter.<br/>
-		The summer of her freshman year, she worked with UML's Engaging Computing Group developing Android applications for a web system for science education called iSENSE. <br/>
-		In addition to her leadership in SWE, Rajia previously served as vice president of UMass Lowell's IEEE chapter.<br/>
-	 </p>
+		<image class = 'rajia_pic' src="images/rajia.jpg" alt="dev pic"  >
+	 <h2>Rajia Abdelaziz</h2>
+	 <h3>Web Developer/Software Engineer</h3>
+		<h4> Computer Science and Electrical Engineering </h4>
+	 <a href="https://www.linkedin.com/in/rajiaabdelaziz">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Rajia Abdelaziz's profile on LinkedIn">
+    </a>
 	 </div>
 	 <div class = "alex">
-		<image class = 'alex_pic' src="alex.jpg" alt="dev pic"  >
+		<image class = 'alex_pic' src="images/alex.jpg" alt="dev pic"  >
 	 <h2> Alex Chen </h2>
-	 <p> Graduating Spring 2016<br/>
-		Computer Science Major <br/>
-		interned at IBM over the summer and has a job at IBM after graduation.
-	 </p>
+	 <h3>Web Developer</h3>
+	<h4> Computer Science</h4>
+	 <a href="https://www.linkedin.com/in/alex-chen-70b01986">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Rajia Abdelaziz's profile on LinkedIn">
+    </a>
 	 </div>
+	 </div>
+	 <div>
 	 <div class = "jeremy">
-		<image class = 'jeremy_pic' src="jeremy.jpg" alt="dev pic"  >
+		<image class = 'jeremy_pic' src="images/jeremy.jpg" alt="dev pic"  >
 	 <h2>Jeremy Diagneau</h2>
-	 <p> Computer Science Major <br/>
-		Resident Advisor <br/>
-<<<<<<< HEAD
-=======
-
->>>>>>> gh-pages
-	 </p>
+	 <h3>Web Developer</h3>
+		<h4> Computer Science</h4>
+	 <a href="https://www.linkedin.com/in/jeremydaigneau">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Alex Chen's profile on LinkedIn">
+    </a>
  	</div> 
+		 <div class = "erin">
+		<image class = 'erin_pic' src="images/erin.jpg" alt="dev pic"  >
+	 <h2>Erin Graceffa</h2>
+	 <h3>Hardware Designer</h3>
+		<h4> Electrical Engineering</h4>
+	 <a href="https://www.linkedin.com/in/eringraceffa">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Alex Chen's profile on LinkedIn">
+    </a>
+ 	</div>
+</div> 
+	<div class = "ray">
+		<image class = 'ray_pic' src="images/ray.jpg" alt="dev pic"  >
+	 <h2>Raymond Hamilton</h2>
+	 <h3>Hardware Designer</h3>
+		<h4> Electrical Engineering</h4>
+	 <a href="https://www.linkedin.com/in/raymond-hamilton-b09ba76a">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Alex Chen's profile on LinkedIn">
+    </a>
+ 	</div> 	
+	</div>
 	</div>
  </body> 
  </html> 

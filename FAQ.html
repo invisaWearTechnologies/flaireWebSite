@@ -2,87 +2,172 @@
  	Created:        February 29, 2016 
  	Last Updated:   February 29, 2016 at 9:36 A.M. 
  --> 
- <!DOCTYPE html> 
- 
+  <!DOCTYPE html> 
  
  <html lang="en-us"> 
  <head> 
  	<meta charset="UTF-8"> 
  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
  
- 
  	<!--Page Title--> 
  	<title>invisaWearTechnologies</title> 
  
- 
  	<!--Google Font for Text--> 
- 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
- 
- 
- 	<!--Style Sheets--> 
- 	<link rel="StyleSheet" type="text/css" href="css/FAQ_CSS.css" media="screen"> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<!--Style Sheets-->
+	<link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
+	<link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+	<link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+	<script src="simpleCart.js"></script>
  </head> 
+ 
  <body> 
- 
- 
- 	<!--The Page Header Contains a Unique Spectrum of Colors and the Logo--> 
-      <div class='header'> <!-- creates a div for the header for the page, the image and navbar --> 
-         <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar --> 
-         <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> 
-           <ul class='links'> <!-- a div that contains the list of links to other parts of the site--> 
-             <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page --> 
-             <li> <a class="active" href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info --> 
-             <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products--> 
-             <li class='top-right'> <a href=''>CART </a> </li> 
-             <li class='top-right'> <a href=''>CREATE ACCOUNT/LOGIN </a> </li>
-           </ul>  
-<<<<<<< HEAD
-           <div class='flaire-div'> <img id="flaire" src="flaire.png"> </div> 
-         </div> 
-=======
-           <div class='flaire-div'> <img id="flaire" src="Flaire.png"> </div> 
->>>>>>> gh-pages
-      </div> 
- 
+ 	<!--Page Header Containing Navigation Bar-->
+    <section id="slide-0" class="homeSlideZero">
+		<div class="bcg">
+			<div class="hsContainer">
+				<!--<h1>Flaire</h1>-->
+				<div class="navi">
+					<ul>
+						<li class="flaireicon" style="font-family: Quicksand"><a>FLAIRE</a></li>
+						<li><a href="index.html"> <button class="btn btn-default " aria-haspopup="true" aria-expanded="true" type="button"> HOME </button></a></li>
+						<li class="dropdown"> 
+							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+								ABOUT 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="FAQ.html">FAQ</a></li>
+								<li><a href="about_developers.html">About the Developers</a></li>
+								<li><a href="set_up_device.html">Setup Device</a></li>
+							</ul>
+						</li>
+						<li><a href='shop.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">SHOP</button></a></li>
+						<li><a href='login.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
+							</button></a>
+						</li>
+						<li><a href='cart.html' class="glyphicon glyphicon-shopping-cart btn btn-default" aria-hidden="true">(<span class="simpleCart_quantity">
+                        </span>)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 	
- 	<!--Pictures of Slides. Please Note: This will be a slideshow in the future.-->  
-	<image class="about-pic" src="about_page_pic.jpg" alt="About Page Picture">
- 	<div class='title'> 
- 		<h1>FAQ Page</h1> 
-		<li>What are the return policies? </li>
-		<li>Do I have to buy a seperate component with each jewelary? </li>
-		<li>How do I setup the app on my phone? </li>
-		<li>How do I register my device? </li>
-		<li>What is the aim of this site?</li>
- 	</div> 
- 	<!--Contact Information Bar--> 
- 	<div class="questions"> 
- 	 <h2> What are the return policies?</h2>
-	 <p>In terms of the return policies, the only requiremet is that <br/>
-		you have not damaged the component or jewelary. <br/>
-		You will just have to print out the recipt in your email and print<br/>
-		out the lable and paste it on any box and mail it. 
-	 </p>
-	 <br/>
-	 <h2>Do I have to buy a separate component with each jewelary?</h2>
-	 <p>
-		No you do no. All you have to do is remove the separate part of the <br/>
-		jewelary, which is the component, and attach it into another jewelary <br/>
-		purchased with our company. To learn more about the devices you can go to<br/>
-		"How to Set Up the Device" on the about page. 
-	 </p>
-	 <br/>
-	 <h2> How do I setup the app on my phone? </h2>
-	 <p> You go to the app store and search up invisaWearTechnologies, which should<br/>
-	 display the app and once you download it, all you have to do is sign in. <br/>
-	 Once you sign in you will see all the options that is on the site.
-	 </p>
-	 <br/>
-	 <h2>What is the aim of invisaWearTechnologies?</h2>
-	 <p> It is to keep you safe on the street. <br/>
-		It makes it simpler to contact the police in <br/>
-		an emergency.
-	 </p>
- 	</div> 
+ 	 <!--Image of Jewlery-->
+    <div>
+		<image class="about-image-content" src="images/help_faq.jpg" alt="About Page Picture">
+<!--The code was modified from http://jsfiddle.net/22ZyM/3/-->
+	</div>
+	<div id="vertical-menu">
+    <ul>
+        <li>
+            	<h3><span class="plus">+</span>What is the aim of invisaWear Technologies?</h3>
+
+            <ul>
+                <p>Flaire by invisaWear Technologies aims to offer individuals the ability to contact emergency services with the touch of a button.</p>
+            </ul>
+        </li>
+        <!-- we will keep this LI open by default -->
+        <li>
+            	<h3><span class="plus">+</span>Do I have to buy a separate component for each piece of jewelry?</h3>
+
+            <ul>
+                <p>
+				No. All you have to do is remove the Flaire component from the existing piece of jewelry
+				and install it into another piece of jewelry purchased from our company.
+				</p>
+
+            </ul>
+        </li>
+		
+        <li>
+            	<h3><span class="plus">+</span>What are the return policies?</h3>
+
+            <ul>
+                <p>In order to return your Flaire, the only requiremet is that their is no damage to the jewelry or component.</br>
+				Flaire may be returned within a span of 60 days. 
+				</p>
+  
+            </ul>
+        </li>
+		<li>
+            	<h3><span class="plus">+</span>How do I setup the app on my phone?</h3>
+
+            <ul>
+                <p> Please go to the app store and search for invisaWearTechnologies. Select the Flaire Companion app and download the </br>
+				application onto your phone.</p>
+
+  
+            </ul>
+        </li>
+		        <li>
+            	<h3><span class="plus">+</span>What platfroms does Flaire support?</h3>
+
+            <ul>
+                <p><b>
+				iOS</b></br></br>
+
+					Fliare will work on the following iOS devices running iOS 8 and above: </br></br>
+
+					iPhone 4S</br> 
+					iPhone 5, iPhone 5C & iPhone 5S </br>
+					iPhone 6, iPhone 6S & iPhone 6 Plus</br></br>
+
+					<b>Android</b></br></br>
+
+					Flaire will work on the following Android devices running Android 4.4 and above:</br></br>
+
+					Samsung Galaxy S4</br>
+					Samsung Galaxy S5</br>
+					Samsung Galaxy S6 & S6 Edge</br>
+					Nexus 5 & 6</br></br>
+
+					If your device is not on the above list, we can't guarantee that it will be compatible.</br>
+					We are working to expand the number of supported devices and will update this list frequently.
+				</p>
+
+            </ul>
+        </li>
+		<li>
+            	<h3><span class="plus">+</span>Can I get Flaire Wet?</h3>
+
+            <ul>
+                <p> Yes, but it can not be submerged in water. The techonology is splash-resistant so a little rain is fine,</br>
+				but swimming or showering should be avoided.</p>
+            </ul>
+        </li>
+				<li>
+            	<h3><span class="plus">+</span>How close does my phone need to be to my Flaire technology?</h3>
+
+            <ul>
+                <p> Flaire uses Bluetooth Low Energy technology. Your Flaire and phone will need to be within 100 meters of each other to ensure </br>
+				you can send alerts.</p>
+  
+            </ul>
+        </li>
+    </ul>
+</div>
+<script>
+$("#vertical-menu h3").click(function () {
+    //slide up all the link lists
+    $("#vertical-menu ul ul").slideUp();
+    $('.plus',this).html('+');
+    //slide down the link list below the h3 clicked - only if its closed
+    if (!$(this).next().is(":visible")) {
+        $(this).next().slideDown();
+        //$(this).remove("span").append('<span class="minus">-</span>');
+        $('.plus').html('+');
+        $('.plus',this).html('-');
+    }
+})
+</script>
+
+
  </body> 
  </html> 

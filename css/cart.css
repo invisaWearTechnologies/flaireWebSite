@@ -1,35 +1,140 @@
+/*
+ * Author: Alex Chen
+ */
+
+/*format when shopping cart is empty header */
+#empty
+{
+  position:absolute;
+  left:20%;
+  top: 40%;
+}
+
+/*changes the properties for the table which holds the items in the shopping cart */
 table 
 {
   position:absolute;
-  top:250px;
-<<<<<<< HEAD
-  left: 30 px;
-=======
-  left:50px;
->>>>>>> refs/remotes/origin/gh-pages
-  text-align:center;
+  left:20%;
+  top:25%;
+  border-collapse:separate;
+  border-spacing: 20px 0;
 }
 
+/* changes properties for the column headers in the table */
 th
 {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  padding: 0 20px 15px 20px;
+  text-align:center; 
 }
 
+/* properties for the table columns */
 td
 {
-  height: 280px;
+  vertical-align:middle;
+  height: 170px;
+  border-bottom: 2px solid;
+  padding: 0 20px 15px 20px;
 }
 
+/* properites for the image column */
+th:nth-child(1)
+{
+    width: 170px;
+}
+
+/* properites for the item name column */
+th:nth-child(2) 
+{
+    width: 200px;
+}
+
+/*properites for the price column*/
+th:nth-child(3) 
+{
+    width: 75px;
+}
+
+/*properties for the increment column */
+th:nth-child(4)
+{
+    width: 20px;
+}
+
+/* properties for the quantity column*/
+th:nth-child(5)
+{
+    width: 20px;
+}
+
+/* properties for the decrement column */
+th:nth-child(6)
+{
+    width: 50px;
+}
+
+/* properties for the remove button*/
+th:nth-child(7)
+{
+    width: 80px;
+}
+
+/* changes properties for the rows in the table */
+tr
+{
+    border-bottom: 2px solid;
+  
+}
+
+/* changes properties for the images in the table */
 img
 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
-#input
+/* properties for the checkout quantity and total price container */
+#checkoutContainer
+{
+  position:fixed;
+  width: 210px;
+  height: 140px;
+  bottom: 12%;
+  right: 12%;
+  border: 4px solid;
+  background-color: white;
+} 
+/* css for the total price title display box  */
+#cartTotal
 {
   position:absolute;
-  top:300px;
-  right: 400px;
+  top: 20%;
+  left:8%;
+  font-weight:bold;
+  font-size: 18px;
 }
+
+/* css for the total price number*/
+#total
+{
+  position:absolute;
+  top: 20%;
+  right:8%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* css for the cart checkout button*/
+#cartCheckout
+{
+  position:absolute;
+  bottom: 12%;
+  left: 28%;
+  display: block;
+  border: 2px solid black;
+  font-family: sandpaper;
+  font-size: 18px;
+}
+
+
+

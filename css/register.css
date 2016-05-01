@@ -1,40 +1,69 @@
+
+/* css for the registration page */
+
+/*css for the Resistration main header */
+h2
+{
+  position:absolute;
+  left: 40%;
+  top: 20%;
+}
+
+/* css for the info header*/
+#infoheader
+{
+  position: absolute;
+  left: 25%;
+  top: 32%;
+}
+
+/*css for the medical conditions header */
+#medheader
+{
+  position: absolute;
+  left: 61%;
+  top: 32%;
+}
+
+/* css for the information fieldset*/
 #information
 {
   position: absolute;
-  left: 300px;
-  top: 250px;
-  width :600px;
+  left: 25%;
+  top: 40%;
+  width :41%;
   height: 200px;
-  border : 2px solid black;
+ /* border : 2px solid black;*/
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  /*background-color: #D3D3D3;*/
 }
 
+/* css for the medical fieldset*/
 #Medical
 {
   position: absolute;
-  left: 900px;
-  top: 250px;
+  left: 61%;
+  top: 40%;
   width :200px;
   height: 200px;
-  border : 2px solid black;
+  /*border : 2px solid black;*/
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  /*background-color: #D3D3D3;*/
 }
 
+/*css for the registration fieldset */
 #registration
 {
   position: absolute;
-  left: 400px;
-  top: 500px;
-  width : 500px;
-  height: 110px;
-  border : 2px solid black;
+  left: 30%;
+  top: 65%;
+  width : 34%;
+  height: 15%;
   font-family : Helvetica;
   font-weight : bold;
-  background-color: #000000;
+  
 }
 
 /* the margin for the input boxes */
@@ -44,42 +73,50 @@
   width: 250px;
 }
 
+/* css for the forms that are on the same line to add a space between them */
 #space
 {
   margin-left: 2%;
 }
 
+/* css for the form boxes*/
 #box
 {
   margin-left: 5px;
   margin-bottom:15px;
 }
 
+/* css for the form boxes that are smaller*/
 #smallbox
 {
   margin-left: 5px;
   margin-bottom:10px;
-  width: 25px;
+  width: 50px;
 }
 
+/* css for the dob form*/
 #dob
 {
   margin-left: 5px;
   margin-bottom:15px;
-  width: 100px;
+  width: auto;
 }
 
+/* css for the medical condition form boxes*/
 #medical
 {
   margin-left: 2px;
   margin-bottom:10px;
+  width: 95%;
 }
 
-#input
+/*css for the information fieldset */
+.name
 {
-  margin-left:2%;
+  padding-bottom: 25px;
 }
 
+/*css for the medical fieldset */
 #input2
 {
   margin-left: 4%;
@@ -88,12 +125,11 @@
 /* properties for the submit button */
 #submit
 {
-  margin-left: 45%;
+  margin-left: 43%;
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
-legend, label
-{
-  color:white;
+#full-name {
+  width: 50%;
 }

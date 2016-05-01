@@ -7,78 +7,110 @@
     </title>
 
     <!-- The css link -->
-    <link type="text/css" rel="stylesheet" href="css/register.css" >
-    <link type="text/css" rel="stylesheet" href="css/navbar.css" media="screen" >
+  <link type="text/css" rel="stylesheet" href="css/register.css" >
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <!--Style Sheets-->
+  <link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
+  <link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+  <link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+  <script src="simpleCart.js"></script>
 
   </head>
   <body>
-    <!--The Page Header Contains a Unique Spectrum of Colors and the Logo-->
-     <div class='header'> <!-- creates a div for the header for the page, the image and navbar -->
-        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
-        <!-- <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> -->
-          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
-            <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page -->
-            <li> <a href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info -->
-            <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products-->
-            <li class='top-right'> <a href='cart.html'>CART </a> </li>
-            <li class='top-right'> <a href='login.html'>CREATE ACCOUNT/LOGIN </a> </li>
-          </ul> 
-          <div class='flaire-div'> <img id="flaire" src="Flaire.png"> </div>
+   <!--Page Header Containing Navigation Bar-->
+    <section id="slide-0" class="homeSlideZero">
+    <div class="bcg">
+      <div class="hsContainer">
+        <!--<h1>Flaire</h1>-->
+        <div class="navi">
+          <ul>
+            <li class="flaireicon" style="font-family: Quicksand"><a>FLAIRE</a></li>
+            <li><a href="index.html"> <button class="btn btn-default " aria-haspopup="true" aria-expanded="true" type="button"> HOME </button></a></li>
+            <li class="dropdown"> 
+              <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                ABOUT 
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about_developers.html">About the Developers</a></li>
+                <li><a href="set_up_device.html">Setup Device</a></li>
+              </ul>
+            </li>
+            <li><a href='shop.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">SHOP</button></a></li>
+            <li><a href='login.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
+              </button></a>
+            </li>
+            <li><a href='cart.html' class="glyphicon glyphicon-shopping-cart btn btn-default" aria-hidden="true">(<span class="simpleCart_quantity">
+                        </span>)</a></li>
+          </ul>
         </div>
-     </div>
+      </div>
+    </div>
+  </section>
 
-    <!--  -->
+  
+    <h2> Register a Device </h2>
+
+    <h3 id="infoheader"> Basic Information </h3>
+    <h3 id="medheader"> Medical Condition(s) </h3>
+
+    <!-- The fieldset for adding profile information using bootstrap forms -->
     <fieldset id="information">
-      <form id="input" name="input">
-        <p>
-          <label for="firstname">First Name</label>
-          <input type="text" id="box" name="firstname" placeholder="First Name">
-          <label id="space" for=lastname">Last Name</label>
-          <input type="text" id="box" name="Last Name" placeholder="Last Name">
+       
+       <!-- Formats Bootstrap forms to be inline with inline labels -->
+       <form class="form-inline name">
+          <label for="full-name">Full Name</label>
+          <input type="text" class="form-control" id="full-name" name="fullname" placeholder="Full Name">
+       </form>
+
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <input type="text" class="form-control" id="smallbox" placeholder="M/F">
+           </div>
+            <div class="form-group">
+              <label for="DoB">Date of Birth</label>
+              <input type="Date" class="form-control" id="dob" placeholder="MM/DD/YYYY">
+            </div>
+           </form>  
         </p>
         <p>
-          <label for="gender">Gender (M/F)</label>
-          <input type="text" id="smallbox" name="gender">
-          <label id="space" for="age">Age</label>
-          <input type="text" id="smallbox" name="age">
-          <label id="space" for="DOB">Date of Birth</label>
-          <input type="text" id="dob" name="DOB" placeholder="(MM/DD/YYYY)">
-        </p>
-        <p>
+        <form class="form-inline">
           <label for="height">Height</label>
-          <input type="text" id="smallbox" name="height">
-          <label id="space" for="weight">Weight</label>
-          <input type="text" id="smallbox" name="Weight">
+          <input type="text" class="form-control" id="smallbox" name="height">
+          <label id="space"  for="weight">Weight</label>
+          <input type="text" class="form-control" id="smallbox" name="Weight">
           <label id="space" for="school">School</label>
-          <input type="text" id="box" name="school" placeholder="School">
-        </p>
-      </form>
+          <input type="text" class="form-control" id="box" name="school" placeholder="School">
+        </form>
+      </p>
     </fieldset>
   
-    <!--  -->
+    <!-- fieldset for adding medical conditions -->
     <fieldset id="Medical">
       <form id="input3" name="input">
         <p>
-          <label for="medical">Medical Conditions</label>
-          <input type="text" id="medical" name="medical" placeholder="Medical Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
-          <input type="text" id="medical" name="medical" placeholder="Additional Condition">
+          <input type="text" class="form-control" id="medical" name="medical" placeholder="Condition">
+          <input type="text" class="form-control" id="medical" name="medical" placeholder="Condition">
+          <input type="text" class="form-control" id="medical" name="medical" placeholder="Condition">
         </p>
       </form>
     </fieldset>
 
-
-    <!--  -->
+    <!-- fieldset for registering the device-->
     <fieldset id="registration">
-      <legend>Register a Device</legend>
-      <form id="input2" name="input" action="register.html" method="GET" >
-        <p>
+      <form id="input2" class="form-inline" name="input" action="index.html" method="GET" >
+        
           <label for="Registration">Registration Number</label>
-          <input type="text" id="register" name="Registration" placeholder="Registation Number">
-        </p>
-          <input type="submit" value="Submit" id="submit">
+          <input type="text" class="form-control" id="register" name="Registration" placeholder="Registation Number">
+     
+           <button type="submit" id="submit" class="btn btn-default">Register Device</button>
       </form>
     </fieldset>
   </body>

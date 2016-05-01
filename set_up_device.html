@@ -1,60 +1,85 @@
 <!--Author:         Madhumathi Prakash, UMass Lowell Undergraduate 
  	Created:        February 29, 2016 
- 	Last Updated:   February 29, 2016 at 9:36 A.M. 
+ 	Last Updated:   April 28, 2016 at 9:36 A.M. 
  --> 
  <!DOCTYPE html> 
- 
  
  <html lang="en-us"> 
  <head> 
  	<meta charset="UTF-8"> 
  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
  
- 
  	<!--Page Title--> 
  	<title>invisaWearTechnologies</title> 
- 
  
  	<!--Google Font for Text--> 
  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
  
- 
  	<!--Style Sheets--> 
- 	<link rel="StyleSheet" type="text/css" href="css/setup_device_css.css" media="screen"> 
+ 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <!--Style Sheets-->
+  <link rel="StyleSheet" type="text/css" href="css/navbar.css" media="screen">
+  <link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+  <link rel="StyleSheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+
+  <script src="js/jquery-2.2.2.min.js"></script>
+  <script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+  <script src="simpleCart.js"></script>
  </head> 
  <body> 
- 
- 
- 	<!--The Page Header Contains a Unique Spectrum of Colors and the Logo--> 
-      <div class='header'> <!-- creates a div for the header for the page, the image and navbar --> 
-         <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar --> 
-         <div class='logo-div'> <a href=''> <img id="logo" src="iW1.png"></a></div> 
-           <ul class='links'> <!-- a div that contains the list of links to other parts of the site--> 
-             <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page --> 
-             <li> <a class="active" href='about.html'>ABOUT</a> </li> <!-- a link to the page with about info --> 
-             <li> <a href='shop.html'>SHOP</a> </li> <!-- a link to the page listing the products--> 
-             <li class='top-right'> <a href=''>CREATE ACCOUNT/LOGIN </a> </li> 
-             <li class='top-right'> <a href=''>CART </a> </li> 
-           </ul>  
-           <div class='flaire-div'> <img id="flaire" src="flaire.png"> </div> 
-         </div> 
-      </div> 
- 
-	
- 	<!--Pictures of Slides. Please Note: This will be a slideshow in the future.-->  
-	<image class="about-pic" src="about_page_pic.jpg" alt="About Page Picture">
+ 	<!--Page Header Containing Navigation Bar-->
+    <section id="slide-0" class="homeSlideZero">
+        <div class="bcg">
+            <div class="hsContainer">
+                <!--<h1>Flaire</h1>-->
+                <div class="navi">
+                    <ul>
+                        <li class="flaireicon" style="font-family: Quicksand"><a>FLAIRE</a></li>
+                        <li><a href="index.html"> <button class="btn btn-default " aria-haspopup="true" aria-expanded="true" type="button"> HOME </button></a></li>
+                        <li class="dropdown"> 
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                                ABOUT 
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="FAQ.html">FAQ</a></li>
+                                <li><a href="about_developers.html">About the Developers</a></li>
+                                <li><a href="set_up_device.html">Setup Device</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='shop.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">SHOP</button></a></li>
+                        <li><a href='login.html'><button class="btn btn-default" aria-haspopup="true" aria-expanded="true" type="button">CREATE ACCOUNT/LOGIN
+                            </button></a>
+                        </li>
+                        <li><a href='cart.html' class="glyphicon glyphicon-shopping-cart btn btn-default" aria-hidden="true">(<span class="simpleCart_quantity">
+                        </span>)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Image of Jewlery-->
+
+		<image class="device_image" src="images/setup_device_main.png" alt="About Device">
+	<div class="deviceInfo">
+		<image class="device_pic" src="images/device.PNG" alt="device picture">
+	<!--Instructions to Set-Up Device -->
  	<div class='device_setup'> 
- 		<h1>How to Set Up the Device <image class="device_pic" src="Rose_Oval_Locket.jpg" alt="device picture"></h1> 
-		
-		<h2> Follow the below steps to setup the device: </h2>
-		<li>1. Press Setup to configure the app.</li>
-		<li>2. Fill out the Personal Information Page</li>
-		<li>3. Fill out Additional Information Page.</li>
-		<li>4. Fill out the Emergency Contact Info</li>
-		<li>5. Connect Device to Phone</li>
-		<li>6. Your Device will now be ready for use! Press the button in the event of an emergency.</li>
-		
+		<h2>Please follow the steps below to setup your Flaire: </h2>
+		<br>
+        <li> Download the Flaire Companion App from the App Store.</li>
+		<li> Fill out the Personal Information Page.</li>
+		<li> Fill out the Additional Information Page.</li>
+		<li> Fill out the Emergency Contact Information Page.</li>
+		<li> Connect the Device to your Phone.</li>
+		<li> Your Device will now be ready for use! Press the button on the component in the event of an emergency.</li>
  	</div>
-	
+	</div>
+
+		<image class="device_screenshots" src="images/screensot.png" alt="device picture">
  </body> 
  </html> 
